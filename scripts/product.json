@@ -1,0 +1,339 @@
+{
+    "bandai": {
+        "gundam": [
+            {
+                "id": 0,
+                "name": "RX-78-2 Gundam",
+                "description": "The Entry Grade RX-78-2 Gundam, based on the anime series Mobile Suit Gundam, is the ultimate introduction item for GunPla. The plastic is color molded requiring no paint, snaps together requiring no glue, uses easy twist off parts requiring no tools, and now doesn't even require stickers for tiny details! The RX-78-2 Gundam (Full Weapon Set) comes with Beam Rifle, Shield, two Beam Sabers, Hyper Bazooka, Beam Javelin, and Gundam Hammer!",
+                "price": 170000,
+                "brand": "Bandai",
+                "rating": 4.5,
+                "sold": 13453,
+                "image": "./assets/Product/Gundam/RX-78-2.jpg",
+                "image2":"./assets/Product/Gundam/RX-78-2_2.jpg"
+            },
+            {
+                "id": 1,
+                "name": "RX-79[G] Gundam Ground",
+                "description": "The RX-79[G] Gundam Ground Type is a mass-produced mobile suit and the mainstay of the Earth Federation Forces in the One Year War. It is armed with a beam rifle, beam saber, and a shield.",
+                "price": 150000,
+                "brand": "Bandai",
+                "rating": 3.8,
+                "sold": 4201,
+                "image": "./assets/Product/Gundam/RX-79-G.jpeg",
+                "image2": "./assets/Product/Gundam/RX-79-G_2.jpg"
+            },
+            {
+                "id": 2,
+                "name": "MS-06S Zaku II Commander",
+                "description": "The MS-06S Zaku II Commander Type is a specialized version of the iconic Zaku II mobile suit. It features a distinctive red color scheme and is piloted by high-ranking officers. The suit is equipped with a machine gun, bazooka, and heat hawk.",
+                "price": 160000,
+                "brand": "Bandai",
+                "rating": 4.9,
+                "sold": 2430,
+                "image": "./assets/Product/Gundam/MS-06S-Zaku.jpg",
+                "image2": "./assets/Product/Gundam/MS-06S-Zaku_2.jpg"
+            },
+            {
+                "id": 3,
+                "name": "MSN-04 Sazabi",
+                "description": "The MSN-04 Sazabi is a powerful mobile suit piloted by Char Aznable in the anime film Char's Counterattack. It is armed with a beam rifle, beam sabers, funnels, and a shield.",
+                "price": 300000,
+                "brand": "Bandai",
+                "rating": 3.2,
+                "sold": 1532,
+                "image": "./assets/Product/Gundam/MSN-04-Sazabi.jpg",
+                "image2": "./assets/Product/Gundam/MSN-04-Sazabi_2.jpg"
+            },
+            {
+                "id": 4,
+                "name": "RX-93 Nu Gundam",
+                "description": "The RX-93 Nu Gundam is a high-performance mobile suit from the anime film Char's Counterattack. It features advanced psycho-frame technology and is armed with a beam rifle, beam sabers, fin funnels, and a shield.",
+                "price": 350000,
+                "brand": "Bandai",
+                "rating": 4.1,
+                "sold": 1764,
+                "image": "./assets/Product/Gundam/RX-93-Nu.jpg",
+                "image2": "./assets/Product/Gundam/RX-93-Nu_2.jpeg"
+            },
+            {
+                "id": 5,
+                "name": "ZGMF-X10A Freedom Gundam",
+                "description": "The ZGMF-X10A Freedom Gundam is a highly maneuverable mobile suit from the anime series Mobile Suit Gundam SEED. It is equipped with beam rifles, beam sabers, and a multi-phase energy wing system.",
+                "price": 320000,
+                "brand": "Bandai",
+                "rating": 4.4,
+                "sold": 1000,
+                "image": "./assets/Product/Gundam/ZGMF-X10A.jpg",
+                "image2": "./assets/Product/Gundam/ZGMF-X10A_2.jpg"
+            },
+            {
+                "id": 6,
+                "name": "ZGMF-X20A Freedom Gundam",
+                "description": "The ZGMF-X20A Strike Freedom Gundam is an advanced mobile suit from the anime series Mobile Suit Gundam SEED Destiny. It features a full complement of weaponry, including beam rifles, beam sabers, railguns, and DRAGOON system.",
+                "price": 380000,
+                "brand": "Bandai",
+                "rating": 4.7,
+                "sold": 1000,
+                "image": "./assets/Product/Gundam/ZGMF-X20A.jpg",
+                "image2": "./assets/Product/Gundam/ZGMF-X20A_2.jpg"
+            },
+            {
+                "id": 7,
+                "name": "GN-001 Gundam Exia",
+                "description": "The GN-001 Gundam Exia is the main protagonist's mobile suit in the anime series Mobile Suit Gundam 00. It is a close combat specialist and is armed with various melee weapons, such as beam sabers and GN blades.",
+                "price": 280000,
+                "brand": "Bandai",
+                "rating": 3.9,
+                "sold": 1000,
+                "image": "./assets/Product/Gundam/GN-001-Gundam-Exia.jpg",
+                "image2": "./assets/Product/Gundam/GN-001-Gundam-Exia_2.jpg"
+            },
+            {
+                "id": 8,
+                "name": "GN-0000 00 Gundam",
+                "description": "The GN-0000 00 Gundam is a powerful mobile suit from the anime series Mobile Suit Gundam 00. It is equipped with twin GN drives and can transform into a high-speed fighter mode. Its armament includes GN swords, GN shield, and GN beam rifle.",
+                "price": 330000,
+                "brand": "Bandai",
+                "rating": 5,
+                "sold": 1000,
+                "image": "./assets/Product/Gundam/GN-0000-Gundam.jpg",
+                "image2": "./assets/Product/Gundam/GN-0000-Gundam_2.jpg"
+            }
+        ],
+        "pokemon" : [
+            {
+                "id": 9,
+                "name" : "Pokemon Model PIKACHU",
+                "description" : "Make your own Pikachu with this quick model kit. This model kit of the beloved Pikachu from Pokemon is part of a brand-new lineup from Bandai! It assembles fast and easy, with just 15 pre-colored parts and a minimum amount of stickers. Tools aren't necessary to remove the parts from the sprues, too, making it perfect for anyone who's new to building plastic models. Pikachu will be about 7.5cm tall when assembled.",
+                "price": 115000,
+                "brand": "Bandai",
+                "rating": 4.3,
+                "sold": 1000,
+                "image": "./assets/Product/Pokemon/pikachu.jpg",
+                "image2": "./assets/Product/Pokemon/pikachu_2.jpg"
+            },
+            {
+                "id": 10,
+                "name": "Pokemon Model CHARIZARD",
+                "description": "Build your own Charizard with this exciting model kit! This Bandai model kit allows you to assemble the powerful Charizard from Pokemon. With 20 pre-colored parts and simple assembly instructions, you can bring Charizard to life. The finished model stands at an impressive 12cm tall and features dynamic poses. No tools required for assembly.",
+                "price": 150000,
+                "brand": "Bandai",
+                "rating": 5,
+                "sold": 1000,
+                "image": "./assets/Product/Pokemon/charizard.jpg",
+                "image2": "./assets/Product/Pokemon/charizard_2.jpg"
+            },
+            {
+                "id": 11,
+                "name": "Pokemon Model MEWTWO",
+                "description": "Unleash the legendary power of Mewtwo with this Bandai model kit! Assemble Mewtwo, the psychic-type Pokemon known for its incredible abilities. The model kit includes 25 pre-colored parts and step-by-step instructions for easy assembly. Mewtwo will stand approximately 10cm tall when completed, showcasing its fierce presence.",
+                "price": 175000,
+                "brand": "Bandai",
+                "rating": 5,
+                "sold": 1000,
+                "image": "./assets/Product/Pokemon/mewtwo.jpg",
+                "image2": "./assets/Product/Pokemon/mewtwo_2.jpg"
+            },
+            {
+                "id": 12,
+                "name": "Pokemon Model GENGAR",
+                "description": "Capture the mischievous Gengar with this Bandai model kit! Construct your very own Gengar, the ghost-poison type Pokemon with a sly grin. This kit contains 18 pre-colored parts that can be assembled without any additional tools. Gengar will measure about 8cm tall once built and will surely add a touch of mischief to your collection.",
+                "price": 120000,
+                "brand": "Bandai",
+                "rating": 5,
+                "sold": 1000,
+                "image": "./assets/Product/Pokemon/gengar.jpg",
+                "image2": "./assets/Product/Pokemon/gengar_2.jpg"
+            },
+            {
+                "id": 13,
+                "name": "Pokemon Model BLASTOISE",
+                "description": "Get ready to make a splash with this Bandai model kit featuring Blastoise! Build the mighty Blastoise, the water-type Pokemon known for its powerful water cannons. With 22 pre-colored parts and straightforward assembly instructions, you can bring this aquatic Pokemon to life. The completed model stands at a height of 11cm and is perfect for display or play.",
+                "price": 160000,
+                "brand": "Bandai",
+                "rating": 5,
+                "sold": 1000,
+                "image": "./assets/Product/Pokemon/blastoise.jpg",
+                "image2": "./assets/Product/Pokemon/blastoise_2.jpg"
+            },
+            {
+                "id": 14,
+                "name": "Pokemon Model EEVEE",
+                "description": "Create your very own Eevee with this delightful Bandai model kit! Assemble the adorable Eevee, the Pokemon with multiple evolutionary forms. This kit features 16 pre-colored parts and user-friendly instructions for hassle-free assembly. Eevee stands at a height of approximately 6.5cm once built and will surely charm Pokemon fans of all ages.",
+                "price": 95000,
+                "brand": "Bandai",
+                "rating": 5,
+                "sold": 1000,
+                "image": "./assets/Product/Pokemon/eeve.jpg",
+                "image2": "./assets/Product/Pokemon/eeve_2.jpg"
+            } 
+        ]
+    },
+    "tamiya" : {
+        "rc-car" : [
+            {
+                "id": 15,
+                "name": "TAMIYA 18094 NEO-VQS",
+                "description": "This assembly kit creates the Neo-VQS, a stylish and speedy Mini 4WD racer inspired by its predecessor the Vanquish Jr. The refined body is molded in black, and paired with the brand new VZ chassis, also molded in black along with its A parts. Red 5-spoke wheels are joined by black low-profile tires, whilst an additional accent is provided by marking stickers with red and white elements.",
+                "price": 170000,
+                "brand": "Tamiya",
+                "rating": 5,
+                "sold": 1000,
+                "image": "./assets/Product/Tamiya/TAMIYA-18094-NEO-VQS.jpg",
+                "image2": "./assets/Product/Tamiya/TAMIYA-18094-NEO-VQS_2.jpg"
+            },
+            {
+                "id": 16,
+                "name": "TAMIYA Vanguard Sonic",
+                "description": "The Vanguard Sonic, a machine that was used by Retsu Seiba, now comes released on the Super-II chassis which is made from black-colored carbon-fiber reinforced nylon material. Black wheels also made from carbon-fiber reinforced nylon material. Battery holder and rear stay are molded in red ABS material to provide a vivid visual highlight.",
+                "price": 170000,
+                "brand": "Tamiya",
+                "rating": 5,
+                "sold": 1000,
+                "image": "./assets/Product/Tamiya/VanguardSonic.jpg",
+                "image2": "./assets/Product/Tamiya/VanguardSonic_2.jpg"
+            },
+            {
+                "id": 17,
+                "name": "TAMIYA RC Comical Grasshopper",
+                "description": "The Tamiya RC 58662 Comical Grasshopper is a fun and unique RC car that features a comical and exaggerated design. It is based on the classic Grasshopper buggy, but with a twist. This RC car is sure to provide hours of entertainment for both kids and adults.",
+                "price": 775000,
+                "brand": "Tamiya",
+                "rating": 5,
+                "sold": 1000,
+                "image": "./assets/Product/Tamiya/TAMIYA-RC-58662-Comical-Grasshopper.jpg",
+                "image2": "./assets/Product/Tamiya/TAMIYA-RC-58662-Comical-Grasshopper_2.jpg"
+            },
+            {
+                "id": 18,
+                "name": "TAMIYA RC Subaru BRZ R&D Sport",
+                "description": "The Tamiya RC 58663 Subaru BRZ R&D Sport is a scale model RC car that replicates the Subaru BRZ race car used by the R&D Sport team. With its detailed body and realistic performance, this RC car is perfect for car enthusiasts who want to experience the thrill of racing.",
+                "price": 980000,
+                "brand": "Tamiya",
+                "rating": 5,
+                "sold": 1000,
+                "image": "./assets/Product/Tamiya/TAMIYA-RC-58663-Subaru-BRZ.jpg",
+                "image2": "./assets/Product/Tamiya/TAMIYA-RC-58663-Subaru-BRZ_2.jpg"
+            },
+            {
+                "id": 19,
+                "name": "TAMIYA RC Mercedes-Benz G 500",
+                "description": "The Tamiya RC 58667 Mercedes-Benz G 500 is a highly detailed and realistic scale model RC car that replicates the iconic Mercedes-Benz G-Class SUV. With its authentic body and superb performance, this RC car is perfect for those who appreciate luxury and off-road capabilities.",
+                "price": 1110000,
+                "brand": "Tamiya",
+                "rating": 5,
+                "sold": 1000,
+                "image": "./assets/Product/Tamiya/TAMIYA-RC-58667-Mercedes-Benz-G-500.jpg",
+                "image2": "./assets/Product/Tamiya/TAMIYA-RC-58667-Mercedes-Benz-G-500_2.jpg"
+            }
+        ],
+        "track" : [
+            {
+                "id": 20,
+                "name": "JR Racing Mini 4WD Circuit",
+                "description": "This is a standard three-lane oval racing circuit for Tamiya's Mini 4WD racing car models. It is made from light and sturdy ABS resin plastic. The track is quick and easy to assemble. Using a two-level lane change section, it allows smooth running throughout the course of a 3-lap race. Three laps around the circuit is one racing length. Lane sizes are based on racing circuit specifications used in Tamiya's official Mini 4WD races.",
+                "price": 550000,
+                "brand": "Tamiya",
+                "rating": 5,
+                "sold": 1000,
+                "image": "./assets/Product/Tamiya/JR-Racing-Mini-4WD-Circuit.jpg",
+                "image2": "./assets/Product/Tamiya/JR-Racing-Mini-4WD-Circuit_2.png"
+            },
+            {
+                "id": 21,
+                "name": "JR Oval Home Circuit",
+                "description": "This is a highly attractive Mini 4WD track for beginners or young Mini 4WD fans. The set contains the Oval Home Circuit with curve sections in black plus straight and lane change sections in blue, as well as kits creating the Rowdy Bull (Item 18707) and Ignicion (Item 18657) cars. You simply need to assemble the kits and purchase batteries, then set up the track, and you can get to racing!",
+                "price": 430000,
+                "brand": "Tamiya",
+                "rating": 5,
+                "sold": 1000,
+                "image": "./assets/Product/Tamiya/JR-Oval-Home-Circuit.jpg",
+                "image2": "./assets/Product/Tamiya/JR-Oval-Home-Circuit_2.jpg"
+            }
+        ]
+    },
+    "mini-gt" : {
+        "miniature-car" : [
+            {
+                "id": 22,
+                "name": "LB WORKS Nissan GT-R (R35) Black",
+                "description": "Sleek and powerful LB WORKS Nissan GT-R (R35) in black with copper wheels. This miniature car is a stunning combination of style and performance, sure to impress any automotive enthusiast. The intricate details and craftsmanship make it a must-have addition to any collection. Get ready to showcase this iconic sports car on your display shelf or race it on your miniature track!",
+                "price":240000,
+                "brand": "Mini-GT",
+                "rating": 5,
+                "sold": 1000,
+                "image":"./assets/Product/Minigt/r35LBW.jpg",
+                "image2":"./assets/Product/Minigt/r35LBW_2.jpg"
+            },
+            {
+                "id": 23,
+                "name":"Nissan LB-Super Silhouette S15 SILVIA",
+                "description":"Auto Finesse Nissan LB-Super Silhouette S15 SILVIA. This miniature car embodies a dynamic and stylish design that captures attention on the road. With its sleek lines and vibrant color, it's a true eye-catcher. The high level of detail and precision craftsmanship make it a valuable collectible for car enthusiasts. Whether you're a fan of Nissan or simply appreciate beautiful automobiles, this miniature car is a must-have for your collection.",
+                "price":240000,
+                "brand": "Mini-GT",
+                "rating": 5,
+                "sold": 1000,
+                "image":"./assets/Product/Minigt/s15LBW.jpg",
+                "image2":"./assets/Product/Minigt/s15LBW_2.jpg"
+            },
+            {
+                "id": 24,
+                "name": "Bugatti Chiron Pur Sport Yellow",
+                "description":"Experience the exhilarating Bugatti Chiron Pur Sport in striking yellow. Unleash the ultimate performance and precision with this miniature car. Whether you're a Bugatti enthusiast or a fan of high-performance vehicles, this miniature car is a perfect representation of automotive excellence. Display it proudly or let it race on your miniature track! What color is your Bugatti?",
+                "price": 240000,
+                "brand": "Mini-GT",
+                "rating": 5,
+                "sold": 1000,
+                "image":"./assets/Product/Minigt/chironpursport.jpg",
+                "image2":"./assets/Product/Minigt/chironpursport_2.jpg"
+            },
+            {
+                "id": 25,
+                "name": "Pagani Huayra Roadster Black",
+                "description":"The Pagani Huayra Roadster in sleek black. This miniature car showcases the breathtaking design and blistering speed of its full-size counterpart. Every curve and line is meticulously crafted, capturing the essence of the real car. Whether you're a Pagani enthusiast or a collector of exotic cars, this miniature replica is a must-have. Display it in your collection or let it zoom around your miniature race track for an exciting experience!",
+                "price": 240000,
+                "brand": "Mini-GT",
+                "rating": 5,
+                "sold": 1000,
+                "image":"./assets/Product/Minigt/paganihuayra.jpg",
+                "image2":"./assets/Product/Minigt/paganihuayra_2.jpg"
+            },
+            {
+                "id": 26,
+                "name": "BMW M4 GT3",
+                "description": "Unleash the track-ready BMW M4 GT3. This miniature car embodies precision engineering and raw power, just like its real-life counterpart. The attention to detail and quality craftsmanship make it a remarkable collectible for car enthusiasts. Whether you're a fan of BMW or a racing enthusiast, this miniature car is a must-have addition to your collection. Put it on display or let it race on your miniature track for an adrenaline-pumping experience!",
+                "price": 240000,
+                "brand": "Mini-GT",
+                "rating": 5,
+                "sold": 1000,
+                "image":"./assets/Product/Minigt/bmwm4gt3.jpg",
+                "image2":"./assets/Product/Minigt/bmwm4gt3_2.jpg"
+            }
+        ],
+        "display" : [
+            {
+                "id": 27,
+                "name": "Acrylic Display Case Large",
+                "description": "Showcase your prized collectibles with this high-quality acrylic display case. Designed specifically for 20 Mini-GT models, this display case provides a clear and protective enclosure to exhibit your favorite die-cast cars. The sturdy acrylic material ensures durability and allows for optimal visibility, allowing every detail of your Mini-GT model to shine. Dimensions: 35cm (W) x 25cm (D) x 18.4cm (H). Fits 20 cars",
+                "price": 420000,
+                "brand": "Mini-GT",
+                "rating": 5,
+                "sold": 1000,
+                "image":"./assets/Product/Minigt/caselarge.jpg",
+                "image2":"./assets/Product/Minigt/caselarge_2.jpg"
+            },
+            {
+                "id": 28,
+                "name": "Acrylic Display Case Small",
+                "description": "Showcase your prized collectibles with this high-quality acrylic display case. Designed specifically for 5 Mini-GT models, this display case provides a clear and protective enclosure to exhibit your favorite die-cast cars. The sturdy acrylic material ensures durability and allows for optimal visibility, allowing every detail of your Mini-GT model to shine. Dimensions: 12cm (W) x 6cm (D) x 6cm (H). Fits 5 cars",
+                "price": 350000,
+                "brand": "Mini-GT",
+                "rating": 5,
+                "sold": 1000,
+                "image":"./assets/Product/Minigt/casesmall.jpeg",
+                "image2":"./assets/Product/Minigt/casesmall_2.jpg"
+            }
+        ]
+    }
+}

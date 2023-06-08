@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./scripts/script.js"></script>
+    <script type="text/javascript" src="./scripts/scriptproducts.js"></script>
+    <link rel="icon" href="assets/logo2.png">
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet" href="static/stylesproduct.css">
+    <title>HI-Toyz: Products</title>
+</head>
+<body onload="start()">
+    
+    <!-- SIGNIN/SIGNUP OVERLAY -->
+    <div class="overlay-div overlay transition">
+        <!-- SIGN IN -->
+        <div class="transition flex-center flex-col justify-start login-div">
+            <div class="w-90 overlay-close flex-center justify-end mt-2">
+                <button class="clear pointer" onclick="showOverlay('close')"><img src="./assets/close.png"></button>
+            </div>
+            <img class="overlay-logo" src="./assets/logo.png">
+            <p class="font-h fc-black m-0 mt-1 fs-m">Welome Back</p>
+            <p class="font-p fc-gray m-0 mb-5 fs-xxs">Please enter your details to sign in</p>
+
+            <div class="overlay-btn flex-center w-80 justify-between">
+                <button class="flex-center justify-center"><img src="./assets/google.png"></button>
+                <button class="flex-center justify-center"><img src="./assets/twitter.png"></button>
+                <button class="flex-center justify-center"><img src="./assets/facebook.png"></button>
+            </div>
+            <div class="mt-2 mb-5 w-80 flex-center justify-between">
+                <div class="overlay-line"></div>
+                <p class="font-p fc-gray fs-xxs m-0 o-70">OR</p>
+                <div class="overlay-line"></div>
+            </div>
+
+            <label class="font-p fc-gray fs-xxs text-left w-80" for="username">Username</label>
+            <input type="text" class="overlay-input" id="username" placeholder="Type your username">
+            <label class="font-p fc-gray fs-xxs text-left w-80 mt-2" for="password">Password</label>
+            <input type="password" class="overlay-input" id="password" placeholder="Type your password">
+            <a class="font-p fc-gray fs-xxs w-80 mt-2 text-right no-deco" href="https://www.nhs.uk/conditions/dementia/treatment/">Forget password?</a>
+
+            <button class="sign-btn font-h bg-col-a mt-5 pointer" onclick="login()">SIGN IN</button>
+
+            <p class="font-p fs-xxs fc-red mt-2 mb-5" id="error_login">&nbsp;</p>
+            <p class="font-p fs-xxs fc-green mt-2 mb-5" id="success_login">Success!</p>
+
+            <div>
+                <p class="font-p fc-gray fs-xxs inline">Don't have an account? </p>
+                <a class="font-h fc-black fs-xxs underline pointer" href="javascript:changeOverlay('signup')">Create an account</a>
+            </div>
+        </div>
+
+        <!-- SIGN UP -->
+        <div class="transition flex-center flex-col justify-start signup-div">
+            <div class="w-90 overlay-close flex-center justify-end mt-2">
+                <button class="clear pointer" onclick="showOverlay('close')"><img src="./assets/close.png"></button>
+            </div>
+            <img class="overlay-logo" src="./assets/logo.png">
+            <p class="font-h fc-black m-0 mt-1 fs-m">Welome to HI-Toyz</p>
+            <p class="font-p fc-gray m-0 mb-5 fs-xxs">Please enter your details to create your account</p>
+
+            <label class="font-p fc-gray fs-xxs text-left w-80" for="username_regis">Username</label>
+            <input type="text" class="overlay-input" id="username_regis" placeholder="Type your username">
+            <label class="font-p fc-gray fs-xxs text-left w-80 mt-2" for="email_regis">Email</label>
+            <input type="email" class="overlay-input" id="email_regis" placeholder="Type your email">
+            <label class="font-p fc-gray fs-xxs text-left w-80 mt-2" for="password_regis">Password</label>
+            <input type="password" class="overlay-input" id="password_regis" placeholder="Type your password">
+            <label class="font-p fc-gray fs-xxs text-left w-80 mt-2" for="password_confirm">Confirm Password</label>
+            <input type="password" class="overlay-input" id="password_confirm" placeholder="Confirm your password">
+            
+            <button class="sign-btn font-h bg-col-a pointer mt-5" onclick="signUp()">CREATE ACCOUNT</button>
+            
+            <p class="font-p fs-xs fc-red mt-2 mb-5" id="error_signup">&nbsp;</p>
+            <p class="font-p fs-xxs fc-green mt-2 mb-5" id="success_signup">Success!</p>
+            
+            <div>
+                <p class="font-p fc-gray fs-xxs inline">Already have an account? </p>
+                <a class="font-h fc-black fs-xxs underline pointer" href="javascript:changeOverlay('login')">Sign in here</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="z-50">
+        <ul class="font-main flex-center">
+            <li class="mr-2"><a><img src="./assets/logo.png"></a></li>
+            <li><a href="./index.html" class="o-70 h-op">Home</a></li>
+            <li><a href="#" class="o-70 h-op">Products</a></li>
+            <li><a href="./gallery.html" class="o-70 h-op">Gallery</a></li>
+            <li><a href="./event.html" class="o-70 h-op">Event</a></li>
+        </ul>
+        <div class="mr-5">
+            <button href="#" class="nav-signup flex-center bg-col-a font-h" onclick="showOverlay('open')">SIGN IN</button>
+        </div>
+    </nav>
+    
+    <!-- JUMBOTRON -->
+    <header class="video-div fixed z--10">
+        <video autoplay loop muted class="transition">
+            <source src="./assets/backvideo.mp4">
+            <!-- Made with Premiere Pro -->
+        </video>
+        <h1 class="font-h fs-xxl o-50 m-0 transition">PRODUCTS</h1>
+        <div class="video-grad"></div>
+    </header>
+
+    <!-- CONTENT -->
+    <div class="w-screen bg-col-dark-gray content transition absolute">
+        <div class="brand-nav flex nowrap fixed h-screen bg-col-main justify-between">
+            <div></div>
+            <div class="flex-col h-screen">
+                <h1 class="font-h mt-15 fc-gray fs-s">BRANDS</h1>
+                <div class="flex-col justify-around h-70">
+                    <button onclick="changeProducts('bandai')" class="bandai-btn">
+                        <img src="./assets/Brands/bandai.png">
+                    </button>
+        
+                    <button onclick="changeProducts('tamiya')" class="tamiya-btn"> 
+                        <img src="./assets/Brands/tamiya.png">
+                    </button>
+        
+                    <button onclick="changeProducts('minigt')" class="minigt-btn">
+                         <img src="./assets/Brands/minigt.png">
+                    </button>
+                </div>
+            </div>
+            <div class="content-wrapper-left bg-col-dark-gray mt-15"></div>
+        </div>
+        <div class="content-wrapper-top bg-col-main fixed"></div>
+        <div class="content-wrapper-bot bg-col-main fixed"></div>
+        <div class="content-wrapper-right bg-col-main fixed mt-15">
+            <div class="content-curve bg-col-dark-gray m-0"></div>
+        </div>
+        <div class="search-wrapper bg-col-dark-gray transition-2 ">
+            <input type="text" id="content-search" class="bg-col-gray fc-white" placeholder="Search for products">
+        </div>
+        <div class="spacer-l"></div>
+        <div class="product-content bg-col-dark-gray"></div>
+        <div class="spacer-s"></div>
+    </div> 
+</body>
+</html>

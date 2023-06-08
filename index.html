@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./scripts/script.js"></script>
+    <script type="text/javascript" src="./scripts/scriptindex.js"></script>
+    <link rel="icon" href="assets/logo2.png">
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet" href="static/stylesindex.css">
+    <title>HI-Toyz: Home</title>
+</head>
+<body onload="start()">
+
+    <!-- SIGNIN/SIGNUP OVERLAY -->
+    <div class="overlay-div overlay transition">
+        <!-- SIGN IN -->
+        <div class="transition flex-center flex-col justify-start login-div">
+            <div class="w-90 overlay-close flex-center justify-end mt-2">
+                <button class="clear pointer" onclick="showOverlay('close')"><img src="./assets/close.png"></button>
+            </div>
+            <img class="overlay-logo" src="./assets/logo.png">
+            <p class="font-h fc-black m-0 mt-1 fs-m">Welome Back</p>
+            <p class="font-p fc-gray m-0 mb-5 fs-xxs">Please enter your details to sign in</p>
+
+            <div class="overlay-btn flex-center w-80 justify-between">
+                <button class="flex-center justify-center"><img src="./assets/google.png"></button>
+                <button class="flex-center justify-center"><img src="./assets/twitter.png"></button>
+                <button class="flex-center justify-center"><img src="./assets/facebook.png"></button>
+            </div>
+            <div class="mt-2 mb-5 w-80 flex-center justify-between">
+                <div class="overlay-line"></div>
+                <p class="font-p fc-gray fs-xxs m-0 o-70">OR</p>
+                <div class="overlay-line"></div>
+            </div>
+
+            <label class="font-p fc-gray fs-xxs text-left w-80" for="username">Username</label>
+            <input type="text" class="overlay-input" id="username" placeholder="Type your username">
+            <label class="font-p fc-gray fs-xxs text-left w-80 mt-2" for="password">Password</label>
+            <input type="password" class="overlay-input" id="password" placeholder="Type your password">
+            <a class="font-p fc-gray fs-xxs w-80 mt-2 text-right no-deco" href="https://www.nhs.uk/conditions/dementia/treatment/">Forget password?</a>
+
+            <button class="sign-btn font-h bg-col-a mt-5 pointer" onclick="login()">SIGN IN</button>
+
+            <p class="font-p fs-xxs fc-red mt-2 mb-5" id="error_login">&nbsp;</p>
+            <p class="font-p fs-xxs fc-green mt-2 mb-5" id="success_login">Success!</p>
+
+            <div>
+                <p class="font-p fc-gray fs-xxs inline">Don't have an account? </p>
+                <a class="font-h fc-black fs-xxs underline pointer" href="javascript:changeOverlay('signup')">Create an account</a>
+            </div>
+        </div>
+
+        <!-- SIGN UP -->
+        <div class="transition flex-center flex-col justify-start signup-div">
+            <div class="w-90 overlay-close flex-center justify-end mt-2">
+                <button class="clear pointer" onclick="showOverlay('close')"><img src="./assets/close.png"></button>
+            </div>
+            <img class="overlay-logo" src="./assets/logo.png">
+            <p class="font-h fc-black m-0 mt-1 fs-m">Welome to HI-Toyz</p>
+            <p class="font-p fc-gray m-0 mb-5 fs-xxs">Please enter your details to create your account</p>
+
+            <label class="font-p fc-gray fs-xxs text-left w-80" for="username_regis">Username</label>
+            <input type="text" class="overlay-input" id="username_regis" placeholder="Type your username">
+            <label class="font-p fc-gray fs-xxs text-left w-80 mt-2" for="email_regis">Email</label>
+            <input type="email" class="overlay-input" id="email_regis" placeholder="Type your email">
+            <label class="font-p fc-gray fs-xxs text-left w-80 mt-2" for="password_regis">Password</label>
+            <input type="password" class="overlay-input" id="password_regis" placeholder="Type your password">
+            <label class="font-p fc-gray fs-xxs text-left w-80 mt-2" for="password_confirm">Confirm Password</label>
+            <input type="password" class="overlay-input" id="password_confirm" placeholder="Confirm your password">
+            
+            <button class="sign-btn font-h bg-col-a pointer mt-5" onclick="signUp()">CREATE ACCOUNT</button>
+            
+            <p class="font-p fs-xs fc-red mt-2 mb-5" id="error_signup">&nbsp;</p>
+            <p class="font-p fs-xxs fc-green mt-2 mb-5" id="success_signup">Success!</p>
+            
+            <div>
+                <p class="font-p fc-gray fs-xxs inline">Already have an account? </p>
+                <a class="font-h fc-black fs-xxs underline pointer" href="javascript:changeOverlay('login')">Sign in here</a>
+            </div>
+        </div>
+    </div> 
+
+    <!-- NAVBAR -->
+    <nav class="z-50">
+        <ul class="font-main flex-center">
+            <li class="mr-2"><a><img src="./assets/logo.png"></a></li>
+            <li class="nav-desktop"><a href="#" class="o-70 h-op">Home</a></li>
+            <li class="nav-desktop"><a href="./products.html" class="o-70 h-op">Products</a></li>
+            <li class="nav-desktop"><a href="./gallery.html" class="o-70 h-op">Gallery</a></li>
+            <li class="nav-desktop"><a href="./event.html" class="o-70 h-op">Event</a></li>
+        </ul>
+        <div class="mr-5">
+            <button href="#" class="nav-signup flex-center bg-col-a font-h" onclick="showOverlay('open')">SIGN IN</button>
+        </div>
+    </nav>
+    
+    <!-- PARALLAX -->
+    <header class="parallax">
+        <div class="parallax-layer" id="parallax-layer-6" data-speedx="0" data-speedy="0"></div>
+        <div class="parallax-layer" id="parallax-layer-5" data-speedx="0.4" data-speedy="0.05"></div>
+        <div class="parallax-layer" id="parallax-layer-4" data-speedx="0.35" data-speedy="0.2"></div>
+        <div class="parallax-layer" id="parallax-layer-3" data-speedx="0.25" data-speedy="0.4"></div>
+        <div class="parallax-layer" id="parallax-layer-h" data-speedx="0.23" data-speedy="0.45">
+            <div>
+                <h1>HI-TOYZ</h1>
+                <p>YOUR DAILY DOSE OF JOY</p>
+            </div>
+        </div>
+        <div class="parallax-layer" id="parallax-layer-g" data-speedx="0.19" data-speedy="0.5"></div>
+        <div class="parallax-layer" id="parallax-layer-m" data-speedx="0.17" data-speedy="0.4"></div>
+        <div class="parallax-layer" id="parallax-layer-2" data-speedx="0.15" data-speedy="0.6"></div>
+        <div class="parallax-layer" id="parallax-layer-m2" data-speedx="0.1" data-speedy="0.7"></div>
+        <div class="parallax-layer" id="parallax-layer-1" data-speedx="0.08" data-speedy="0.85"></div>
+        <div class="parallax-layer" id="parallax-layer-bot" data-speedx="0.08" data-speedy="0.85"></div>
+    </header>  
+
+    <!-- CONTENTS -->
+    <div class="home-content bg-col-main">
+        <div class="spacer-m"><!-- SPACER --></div>
+
+        <!-- Our Products -->
+        <div class="product-div transition w-screen h-screen">
+            <video autoplay loop muted class="product-video absolute">
+                <source src="./assets/products3d.mp4">
+                <!--MADE WITH SPLINE 
+                    https://app.spline.design/file/9a2dc999-7531-4cb5-b898-b98e3b581aa6-->
+            </video>
+            <div class="flex-center w-screen h-screen absolute justify-end">
+                <div class="mr-10 product-h">
+                    <h1 class="font-main">Our Products</h1>
+                    <p class="font-p">
+                       HI-TOYZ offers a diverse range of collectible items from iconic Gundam models to detailed diecast vehicles and beloved Pokémon merchandise. Explore our products and fuel your passion for collectibles.
+                    </p>
+                    <button class="font-h2 mt-2" onclick="window.location.href='products.html'">SHOP NOW</button>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="spacer-s"><!-- SPACER --></div>
+
+        <!-- Featured Products -->
+        <div class="featured-div transition">
+            <div class="ml-10 mb-5">
+                <h1 class="font-h m-0">FEATURED</h1>
+                <p class="font-p m-0">PRODUCTS</p>
+            </div>
+
+            <!-- FETCH FROM JSON 
+                See scriptindex.js-->
+            <div class="featured-slider"></div>
+
+            <button class="featured-next" onclick="getFeatured()"><img src="./assets/next.png"></button>
+        </div>
+        <div class="spacer-m"><!-- SPACER --></div>
+
+        <!-- History -->
+        <div class="timeline-div transition-2s">
+            <div class="spacer-s"></div>
+            <h1 class="font-h fs-xl m-0">About us</h1>
+            <p class="font-p fs-xs mt-0">Our History</p>
+            <div class="timeline">
+                <div class="timeline-top flex-center nowrap">
+                    <div class="timeline-item">
+                        <h1 class="font-h fs-m">2019 - Opening</h1>
+                        <div class="flex nowrap justify-between">
+                            <img src="./assets/Store/ecom.png">
+                            <p class="font-p fs-xs w-55">During the peak of the global pandemic, our team launched HI-Toyz as an online toy reseller and dropshipper. Our vision was to spread joy to every corner of the earth. </p>
+                        </div>
+                    </div>
+                    <div class="timeline-spacer"></div>
+                    <div class="timeline-item">
+                        <h1 class="font-h fs-m">2021 - First Store</h1>
+                        <div class="flex nowrap justify-between">
+                            <img src="./assets/Store/store1.png">
+                            <p class="font-p fs-xs w-55">HI-Toyz opened its first onsite store, offering a space for customers to explore toys, interact with staff, and experience the joy of play. The store's atmosphere and curated selection fostered a sense of community.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-spacer"></div>
+                    <div class="timeline-item">
+                        <h1 class="font-h fs-m">2022 - Second Store</h1>
+                        <div class="flex nowrap justify-between">
+                            <img src="./assets/Store/store2.png">
+                            <p class="font-p fs-xs w-55">In 2022, HI-Toyz launched its second store, expanding its reach to cater to more toy enthusiasts. This new location replicated the success of the first store, captivating customers with a curated selection and dedicated staff.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-mid">
+                    <div class="absolute timeline-line"></div>
+                    
+                    <div class="timeline-line-spacer"></div>
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-inner"></div>
+                    </div>
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-inner"></div>
+                    </div>
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-inner"></div>
+                    </div>
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-inner"></div>
+                    </div>
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-inner"></div>
+                    </div>
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-inner"></div>
+                    </div>
+                </div>
+                <div class="timeline-bot flex-center nowrap">
+                    <div class="timeline-spacer-2"></div>
+                    <div class="timeline-item">
+                        <h1 class="font-h fs-m">2020 - First Warehouse</h1>
+                        <div class="flex nowrap justify-between">
+                            <img src="./assets/Store/warehouse.jpg">
+                            <p class="font-p fs-xs w-55">In 2020, HI-Toyz purchased its first warehouse to meet the growing demand for our toys. This allowed us to streamline operations, store inventory efficiently, and fulfill orders promptly.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-spacer"></div>
+                    <div class="timeline-item">
+                        <h1 class="font-h fs-m">2021 - Rise in popularity</h1>
+                        <div class="flex nowrap justify-between">
+                            <img src="./assets/Store/queue.png">
+                            <p class="font-p fs-xs w-55">HI-Toyz's growing popularity led to an overcrowded store, surpassing expectations as eager customers flocked to explore the wide array of toys and experience the joy it offered.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-spacer"></div>
+                    <div class="timeline-item">
+                        <h1 class="font-h fs-m">2023 - Third Store</h1>
+                        <div class="flex nowrap justify-between">
+                            <img src="./assets/Store/store3.png">
+                            <p class="font-p fs-xs w-55">Continuing its growth, HI-Toyz proudly opened its third store in 2023. This milestone furthered its mission to bring joy worldwide, reaching new communities and solidifying its position as a top toy retailer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="spacer-screen"><!-- SPACER --></div>
+        <div class="spacer-screen"><!-- SPACER --></div>
+        <div class="spacer-screen"><!-- SPACER --></div>
+
+        <!-- FOOTER -->
+        <div class="footer-div bg-col-main">
+            <div class="footer-left flex-col justify-between">
+                <div>
+                    <img src="./assets/logo.png">
+                    <p class="font-p fs-xxs mt-0 w-80">YOUR DAILY DOSE OF JOY</p>
+                </div>
+                <p class="font-p fs-xxs mb-5">© LC089 - Darryl Christopher</p>
+            </div>
+            <div class="footer-right flex justify-between w-40">
+                <div class="flex-col gap-10 footer-desktop">
+                    <p class="font-h">EXPLORE</p>
+                    <a class="font-p fs-xxs no-deco" href="">Home</a>
+                    <a class="font-p fs-xxs no-deco" href="">Products</a>
+                    <a class="font-p fs-xxs no-deco" href="">Gallery</a>
+                    <a class="font-p fs-xxs no-deco" href="">Event</a>
+                    <a class="font-p fs-xxs no-deco" href=""></a>
+                </div>
+                <div class="flex-col gap-10 footer-desktop">
+                    <p class="font-h">SERVICES</p>
+                    <a class="font-p fs-xxs no-deco" href="">Terms of Service</a>
+                    <a class="font-p fs-xxs no-deco" href="">Cookies Policy</a>
+                    <a class="font-p fs-xxs no-deco" href="">F.A.Q</a>
+                    <a class="font-p fs-xxs no-deco" href="">Support</a>
+                    <a class="font-p fs-xxs no-deco" href=""></a>
+                </div>  
+                <div class="flex-col gap-10">
+                    <p class="font-h">SOCIALS</p>
+                    <a class="font-p fs-xxs no-deco" href="https://www.instagram.com/darryl_ce/">Instagram</a>
+                    <a class="font-p fs-xxs no-deco" href="https://www.linkedin.com/in/darryl-christopher-effendi-987171250/">LinkedIn</a>
+                    <a class="font-p fs-xxs no-deco" href="https://github.com/Darryleffendi">Github</a>
+                    <a class="font-p fs-xxs no-deco" href=""></a>
+                </div>
+                <div class="flex-col gap-10 footer-desktop">
+                    <p class="font-h">NEWSLETTER</p>
+                    <input type="text" class="footer-input" placeholder="Your email here">
+                    <button class="bg-col-a footer-btn font-h fs-xxs">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

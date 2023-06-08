@@ -1,0 +1,52 @@
+nav {
+    top: 0;
+}
+
+.gallery-content {
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery {
+    width: 32%;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 5vh;
+    background-color: azure;
+    background-size: cover;
+}
+
+.gallery-item-bg:hover {
+    opacity: 100%;
+}
+
+.gallery-item-bg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.603);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    opacity: 0%;
+}
+
+#store-1 { background-image: url(../assets/Store/store1.png); }
+#store-2 { background-image: url(../assets/Store/store2.png); }
+#store-3 { background-image: url(../assets/Store/store3.png); }
+#collection-1 { background-image: url(../assets/Store/collection1.jpg); }
+#collection-2 { background-image: url(../assets/Store/collection2.jpg); }
+#collection-3 { background-image: url(../assets/Store/collection3.webp); }
+#collection-4 { background-image: url(../assets/Store/collection4.png); }
+#collection-5 { background-image: url(../assets/Store/collection5.jpg); }
+
+@media screen and (max-width:768px) {
+    .gallery {
+        width:48%;
+    }
+}

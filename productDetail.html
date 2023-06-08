@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./scripts/script.js"></script>
+    <script type="text/javascript" src="./scripts/scriptproductdetail.js"></script>
+    <link rel="icon" href="assets/logo2.png">
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet" href="static/stylesproductDetail.css">
+    <title>HI-Toyz : Product</title>
+</head>
+<body class="bg-col-main" onload="start()">
+    <!-- NAVBAR -->
+    <nav class="z-50">
+        <ul class="font-main flex-center">
+            <li class="mr-2"><a><img src="./assets/logo.png"></a></li>
+            <li><a href="./index.html" class="o-70 h-op">Home</a></li>
+            <li><a href="./products.html" class="o-70 h-op">Products</a></li>
+            <li><a href="#" class="o-70 h-op">Gallery</a></li>
+            <li><a href="#" class="o-70 h-op">Event</a></li>
+        </ul>
+        <div class="mr-5">
+            <a href="#" class="nav-signup flex-center bg-col-a font-h">SIGN IN</a>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="spacer-nav"></div>
+    <div class="ml-10 mt-5 w-screen product-head mb-5">
+    </div>
+    <div class="w-screen flex nowrap justify-between w-80 ml-10">
+        <div class="flex wrap">
+            <img class="product-img m-0">
+            <div class="mt-2">
+                <button class="clear" onclick="selectImage(1)">
+                    <img class="img-btn img-btn1">
+                </button>
+                <button class="clear" onclick="selectImage(2)">
+                    <img class="img-btn img-btn2">
+                </button>
+            </div>
+        </div>
+
+        <div class="product-content w-s40">
+            <p class="font-p fc-a m-0 product-brand"></p>
+            <div class="flex-center nowrap justify-between">
+                <h2 class="font-h m-0 product-name w-60"></h2>
+                <p class="font-p m-0 fs-s product-price"></p>
+            </div>
+            <p class="font-p product-category"></p>
+            <p class="font-p mt-5 product-description"></p>
+            
+            <div class="mt-10 flex-center nowrap justify-between">
+                <button class="bg-col-a font-h">ADD TO CART</button>
+                <div>
+                    <div class="rate-div"></div>
+                    <p class="font-p m-0 fs-xxs sold-div"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="spacer-m"></div>
+    <!-- FOOTER -->
+    <div class="footer-div bg-col-main">
+        <div class="footer-left flex-col justify-between">
+            <div>
+                <img src="./assets/logo.png">
+                <p class="font-p fs-xxs mt-0 w-80">YOUR DAILY DOSE OF JOY</p>
+            </div>
+            <p class="font-p fs-xxs mb-5">© LC089 - Darryl Christopher</p>
+        </div>
+        <div class="footer-right flex justify-between w-40">
+            <div class="flex-col gap-10 footer-desktop">
+                <p class="font-h">EXPLORE</p>
+                <a class="font-p fs-xxs no-deco" href="">Home</a>
+                <a class="font-p fs-xxs no-deco" href="">Products</a>
+                <a class="font-p fs-xxs no-deco" href="">Gallery</a>
+                <a class="font-p fs-xxs no-deco" href="">Event</a>
+                <a class="font-p fs-xxs no-deco" href=""></a>
+            </div>
+            <div class="flex-col gap-10 footer-desktop">
+                <p class="font-h">SERVICES</p>
+                <a class="font-p fs-xxs no-deco" href="">Terms of Service</a>
+                <a class="font-p fs-xxs no-deco" href="">Cookies Policy</a>
+                <a class="font-p fs-xxs no-deco" href="">F.A.Q</a>
+                <a class="font-p fs-xxs no-deco" href="">Support</a>
+                <a class="font-p fs-xxs no-deco" href=""></a>
+            </div>  
+            <div class="flex-col gap-10">
+                <p class="font-h">SOCIALS</p>
+                <a class="font-p fs-xxs no-deco" href="https://www.instagram.com/darryl_ce/">Instagram</a>
+                <a class="font-p fs-xxs no-deco" href="https://www.linkedin.com/in/darryl-christopher-effendi-987171250/">LinkedIn</a>
+                <a class="font-p fs-xxs no-deco" href="https://github.com/Darryleffendi">Github</a>
+                <a class="font-p fs-xxs no-deco" href=""></a>
+            </div>
+            <div class="flex-col gap-10 footer-desktop">
+                <p class="font-h">NEWSLETTER</p>
+                <input type="text" class="footer-input" placeholder="Your email here">
+                <button class="bg-col-a footer-btn font-h fs-xxs">SUBSCRIBE</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

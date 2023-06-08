@@ -1,0 +1,150 @@
+/* ========== Jumbotron ========= */
+
+.video-div {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.video-div video {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    position: absolute;
+}
+
+.video-grad {
+    position: absolute;
+    z-index: 10;
+    width: 100vw;
+    height: 20vh;
+    top: 80vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #090909 100%);    
+}
+
+nav {
+    background-color: #191a1600;
+}
+
+/* ========== Content ========= */
+
+.content {
+    margin-top: 120vh;
+}
+
+.brand-nav {
+    width: calc(160px + 6vw);
+    z-index: 20;
+}
+
+.brand-nav button {
+    width: calc(90px + 4vw);
+    height: calc(90px + 4vw);
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.brand-nav button img {
+    width: 85%;
+}
+
+.content-wrapper-left {
+    width: 20px;
+    height: 75%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.content-wrapper-top {
+    width: calc(94vw - 160px);
+    height: 15vh;
+    left: calc(160px + 6vw);
+    z-index: 20;
+}
+
+.content-wrapper-bot {
+    width: calc(94vw - 160px);
+    height: 10vh;
+    left: calc(160px + 6vw);
+    margin-top: 90vh;
+    z-index: 20;
+}
+
+.content-wrapper-right {
+    width:55px;
+    height:75%;
+    right: 0;
+    z-index: 20;
+}
+
+.content-curve {
+    width: 20px;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.search-wrapper {
+    width: calc(94vw - 230px);
+    height: 64px;
+    position: fixed;
+    margin-top: calc(15vh - 2px);
+    margin-left: calc(160px + 6vw); 
+}
+
+#content-search {
+    width: 100%;
+    height: 28px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 24px;
+    background-image: url(../assets/search.png);
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 20px;
+    text-indent: 58px;
+}
+
+#content-search:focus {
+    outline: none;
+}
+
+.product-content {
+    width: calc(94vw - 230px);
+    min-height: 60vh;
+    margin-left: calc(160px + 6vw);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: calc(10px + 1vw);
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-card img {
+    transition: 500ms;
+    width: calc(100px + 5vw);
+    height: calc(100px + 5vw);
+    object-fit: cover;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.product-card p {
+    width: calc(100px + 5vw);
+}   
+
+.product-card img:hover {
+    box-shadow: rgba(0, 0, 0, 0.644) 8px 10px 20px;
+}

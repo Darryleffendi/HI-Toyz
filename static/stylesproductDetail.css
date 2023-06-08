@@ -1,0 +1,28 @@
+nav {
+    border-bottom: 1px solid rgba(84, 87, 84, 0.198);
+}
+
+.product-img {
+    width: calc(300px + 5vw);
+    height: calc(300px + 5vw);
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-btn {
+    width: calc(20px + 2.5vw);
+    height: calc(20px + 2.5vw);
+    object-fit: cover;
+    object-position: center;
+}
+
+.product-content button{
+    width: calc(90px + 8vw);
+    height: 36px;
+    border-radius: 15px;
+    border: none;
+}
+
+.star-rate {
+    width: 18px
+}
