@@ -69,7 +69,7 @@ window.addEventListener("scroll", (e) => {
         bgClass.forEach(elem => {
             elem.style.backgroundColor = '#191a16';
         });
-    } 
+    }
 });
 
 function getProducts() {
@@ -128,14 +128,9 @@ function mapToHTML(arr, stringHtml) {
 
 function pseudoProduct(amount, stringHtml) {
 
-    let product = getProductByID(1);
-
     for(let i = 0; i < amount; i ++) {
         stringHtml = stringHtml +
-        "<div class=\"product-card no-visible mb-5\" onclick=\"gotoDetails(-1)\">" +
-            "<img src=\"" + product.image +"\">" +
-            "<p class=\"font-h fs-xs mb-0\">" + product.name + "</p>" +
-            "<p class=\"font-p fs-xs\">" + rupiah(product.price) + "</p>" +
+        "<div class=\"product-card mb-5 pseudo-product\">" +
         "</div>"
     }
 

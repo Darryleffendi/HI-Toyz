@@ -48,6 +48,10 @@ body::-webkit-scrollbar-thumb {
     font-weight: 700;
 }
 
+.fs-4xl {
+    font-size: calc(64px + 5vw);
+}
+
 .fs-xxxl {
     font-size: calc(48px + 5vw);
 }
@@ -270,6 +274,10 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 0;
 }
 
+.mb-1 {
+    margin-bottom: 1.25vh;
+}
+
 .mb-2 {
     margin-bottom: 2.5vh;
 }
@@ -471,6 +479,11 @@ body::-webkit-scrollbar-thumb {
     height: 64px;
 }
 
+.spacer-xxs {
+    width: 100vw;
+    height: 7.5vh;
+}
+
 .spacer-xs {
     width: 100vw;
     height: 15vh;
@@ -551,6 +564,19 @@ nav li img {
     font-size: 12px;
     border: none;
     cursor: pointer;
+}
+
+.nav-logo {
+    margin-right: 2.5vw;
+}
+
+.nav-bottom {
+    position: fixed;
+    bottom: 0;
+    height: 64px;
+    width: 100vw;
+    background-color: #181815;
+    z-index: 200;
 }
 
 /* ========== Signin Singup Overlay ========= */
@@ -665,6 +691,7 @@ nav li img {
 .footer-right {
     margin-right: 5vw;
     margin-top: calc(5vh + 40px);
+    width: 50%;
 }
 
 .footer-left img {
@@ -692,9 +719,6 @@ nav li img {
 
 
 @media screen and (max-width:768px) {
-    .spacer-m {
-        height: 15vh;
-    }
 
     .footer-desktop {
         display: none;
@@ -706,5 +730,33 @@ nav li img {
 
     .mobile {
         display: flex;
+    }
+
+    .login-div {
+        width: 100vw;
+    }
+
+    .overlay-div {
+        align-items: flex-end;
+    }
+
+    .nav-logo {
+        margin: 0;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    nav li {
+        margin-left: 0;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 0;
     }
 }

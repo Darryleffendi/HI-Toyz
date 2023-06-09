@@ -85,10 +85,10 @@
     <nav class="z-50">
         <ul class="font-main flex-center">
             <li class="mr-2"><a><img src="./assets/logo.png"></a></li>
-            <li><a href="./index.html" class="o-70 h-op">Home</a></li>
-            <li><a href="./products.html" class="o-70 h-op">Products</a></li>
-            <li><a href="#" class="o-70 h-op">Gallery</a></li>
-            <li><a href="./event.html" class="o-70 h-op">Event</a></li>
+            <li class="no-mobile"><a href="./index.html" class="o-70 h-op">Home</a></li>
+            <li class="no-mobile"><a href="./products.html" class="o-70 h-op">Products</a></li>
+            <li class="no-mobile"><a href="#" class="o-70 h-op">Gallery</a></li>
+            <li class="no-mobile"><a href="./event.html" class="o-70 h-op">Event</a></li>
         </ul>
         <div class="mr-5">
             <button href="#" class="nav-signup flex-center bg-col-a font-h" onclick="showOverlay('open')">SIGN IN</button>
@@ -96,48 +96,166 @@
     </nav>
 
     <!-- GALLERY -->
-    <h1 class="font-h ml-5 fs-xxxl parallax parallax-h absolute" data-speedy="1.3">GALLERY</h1>
-    <div class="spacer-l mt-50"></div>
+    <h1 class="font-h ml-5 fs-4xl parallax parallax-h absolute" data-speedy="1.3">GALLERY</h1>
+    <div class="spacer-l mt-50 no-mobile"></div>
+    <div class="spacer-m mt-50 mobile"></div>
         <div class="gallery-content ml-5">
-            <div class="left-gallery gallery parallax no-mobile" data-speedy="0.5">
+            <div class="left-gallery gallery parallax no-mobile" data-speedy="0.4">
                 <div class="gallery-item" id="store-1">
-                    <div class="gallery-item-bg transition"><p class="font-h">HI-Toyz Alam Sutera</p></div>
+                    <div class="gallery-item-bg transition flex-col justify-center">
+                        <p class="font-h m-0">HI-Toyz Alam Sutera</p>
+                        <p class="font-p m-0">1, Jl. Hang Lekir I No.6</p>
+                    </div>
                 </div>
                 <div class="gallery-item" id="store-2">
-                    <div class="gallery-item-bg transition"><p class="font-h">HI-Toyz Alam Sutera</p></div>
+                    <div class="gallery-item-bg transition flex-col justify-center">
+                        <p class="font-h m-0">HI-Toyz Alam Sutera</p>
+                        <p class="font-p m-0">1, Jl. Hang Lekir I No.6</p> 
+                    </div>
                 </div>
             </div>
-            <div class="mid-gallery gallery parallax" data-speedy="-0.3">
+            <div class="mid-gallery gallery parallax" data-speedy="-0.2">
                 <div class="gallery-item" id="collection-1">
-                    <div class="gallery-item-bg transition"><p class="font-h">HI-Toyz Alam Sutera</p></div>
+                    <div class="gallery-item-bg transition flex-col justify-center">
+                        <p class="font-h m-0">Gundam Collection</p>
+                        <p class="font-p m-0">@HI-Toyz Alam Sutera</p>
+                    </div>
                 </div>
                 <div class="gallery-item" id="collection-2">
-                    <div class="gallery-item-bg transition"><p class="font-h">HI-Toyz Alam Sutera</p></div>
+                    <div class="gallery-item-bg transition flex-col justify-center">
+                        <p class="font-h m-0">Tamiya Collection</p>
+                        <p class="font-p m-0">@HI-Toyz Alam Sutera</p>
+                    </div>
                 </div>
                 <div class="gallery-item" id="collection-3">
-                    <div class="gallery-item-bg transition"><p class="font-h">HI-Toyz Alam Sutera</p></div>
+                    <div class="gallery-item-bg transition flex-col justify-center">
+                        <p class="font-h m-0">Mini-GT Collection</p>
+                        <p class="font-p m-0">@HI-Toyz Senayan</p>
+                    </div>
                 </div>
                 <div class="gallery-item" id="collection-4">
-                    <div class="gallery-item-bg transition"><p class="font-h">HI-Toyz Alam Sutera</p></div>
+                    <div class="gallery-item-bg transition flex-col justify-center">
+                        <p class="font-h m-0">Tomica Collection</p>
+                        <p class="font-p m-0">@HI-Toyz Senayan</p>
+                    </div>
                 </div>
                 <div class="gallery-item" id="collection-5">
-                    <div class="gallery-item-bg transition"><p class="font-h">HI-Toyz Alam Sutera</p></div>
+                    <div class="gallery-item-bg transition flex-col justify-center">
+                        <p class="font-h m-0">Our Collection</p>
+                        <p class="font-p m-0">@HI-Toyz Kemanggisan</p>
+                    </div>
                 </div>
 
             </div>
             <div class="right-gallery gallery parallax" data-speedy="0.2">
                 <div class="gallery-item" id="store-1">
-                    <div class="gallery-item-bg transition"><p class="font-h">HI-Toyz Alam Sutera</p></div>
+                    <div class="gallery-item-bg transition flex-col justify-center">
+                        <p class="font-h m-0">HI-Toyz Alam Sutera</p>
+                        <p class="font-p m-0">Jl. Jalur Sutera Bar. No.Kav. 21</p>
+                    </div>
                 </div>
                 <div class="gallery-item" id="store-2">
-                    <div class="gallery-item-bg transition"><p class="font-h">HI-Toyz Alam Sutera</p></div>
+                    <div class="gallery-item-bg transition flex-col justify-center">
+                        <p class="font-h m-0">HI-Toyz Kemanggisan</p>
+                        <p class="font-p m-0">2, Jl. Raya Kb. Jeruk No.27</p>
+                    </div>
                 </div>
                 <div class="gallery-item" id="store-3">
-                    <div class="gallery-item-bg transition"><p class="font-h">HI-Toyz Alam Sutera</p></div>
+                    <div class="gallery-item-bg transition flex-col justify-center">
+                        <p class="font-h m-0">HI-Toyz Senayan</p>
+                        <p class="font-p m-0">1, Jl. Hang Lekir I No.6</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="spacer-screen"></div>
+        <div class="spacer-s"></div>
+    </div>
+
+    <div class="customer-div transition-2">
+        <div class="spacer-xxs no-mobile"></div> 
+        <div class="flex-center justify-between">
+            <div class="customer-item flex-col justify-between">
+                <div>
+                    <div class="customer-img-container transition-2s">
+                        <img src="./assets/Store/customer1.jpg" class="customer-img">
+                    </div>
+                    <h1 class="font-h fs-s m-0 mt-5 mb-1">Sarah</h1>
+                    <p class="font-p fs-xs m-0">"A collector's paradise with an incredible selection of hobby toys and collectibles. A must-visit for enthusiasts!"</p>
+                </div>
+                <div class="customer-line"></div>
+            </div>
+
+            <div class="customer-item flex-col justify-between">
+                <div>
+                    <div class="customer-img-container transition-2s">
+                        <img src="./assets/Store/customer2.jpg" class="customer-img">
+                    </div>
+                    <h1 class="font-h fs-s m-0 mt-5 mb-1">John</h1>
+                    <p class="font-p fs-xs m-0">"Knowledgeable and friendly staff at HI-Toyz offer top-notch customer service. Perfect for finding unique items for your collection."</p>
+                </div>
+                <div class="customer-line"></div>
+            </div>
+
+            <div class="customer-item flex-col justify-between no-mobile">
+                <div>
+                    <div class="customer-img-container transition-2s">
+                        <img src="./assets/Store/customer3.jpg" class="customer-img">
+                    </div>
+                    <h1 class="font-h fs-s m-0 mt-5 mb-1">Sam</h1>
+                    <p class="font-p fs-xs m-0">"HI-Toyz offers high-quality collectibles, from action figures to model kits and trading cards. A dream store for collectors!"</p>
+                </div>
+                <div class="customer-line"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="spacer-m no-mobile"></div>
+
+    <div>
+        <iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=Binus%20University%20Kampus%20Alam%20Sutera%20(Universitas%20Bina%20Nusantara%20Kampus%20Alam%20Sutera)+(HI-Toyz)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+        <!-- https://www.maps.ie/create-google-map/ -->
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer-div bg-col-main">
+        <div class="footer-left flex-col justify-between">
+            <div>
+                <img src="./assets/logo.png">
+                <p class="font-p fs-xxs mt-0 w-80">YOUR DAILY DOSE OF JOY</p>
+            </div>
+            <p class="font-p fs-xxs mb-5">© LC089 - Darryl Christopher</p>
+        </div>
+        <div class="footer-right flex justify-between w-40">
+            <div class="flex-col gap-10 footer-desktop">
+                <p class="font-h">EXPLORE</p>
+                <a class="font-p fs-xxs no-deco" href="">Home</a>
+                <a class="font-p fs-xxs no-deco" href="">Products</a>
+                <a class="font-p fs-xxs no-deco" href="">Gallery</a>
+                <a class="font-p fs-xxs no-deco" href="">Event</a>
+                <a class="font-p fs-xxs no-deco" href=""></a>
+            </div>
+            <div class="flex-col gap-10 footer-desktop">
+                <p class="font-h">SERVICES</p>
+                <a class="font-p fs-xxs no-deco" href="">Terms of Service</a>
+                <a class="font-p fs-xxs no-deco" href="">Cookies Policy</a>
+                <a class="font-p fs-xxs no-deco" href="">F.A.Q</a>
+                <a class="font-p fs-xxs no-deco" href="">Support</a>
+                <a class="font-p fs-xxs no-deco" href=""></a>
+            </div>  
+            <div class="flex-col gap-10">
+                <p class="font-h">SOCIALS</p>
+                <a class="font-p fs-xxs no-deco" href="https://www.instagram.com/darryl_ce/">Instagram</a>
+                <a class="font-p fs-xxs no-deco" href="https://www.linkedin.com/in/darryl-christopher-effendi-987171250/">LinkedIn</a>
+                <a class="font-p fs-xxs no-deco" href="https://github.com/Darryleffendi">Github</a>
+                <a class="font-p fs-xxs no-deco" href=""></a>
+            </div>
+            <div class="flex-col gap-10 footer-desktop">
+                <p class="font-h">NEWSLETTER</p>
+                <input type="text" class="footer-input" placeholder="Your email here">
+                <button class="bg-col-a footer-btn font-h fs-xxs">SUBSCRIBE</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>

@@ -84,17 +84,21 @@
 
     <!-- NAVBAR -->
     <nav class="z-50">
-        <ul class="font-main flex-center">
-            <li class="mr-2"><a><img src="./assets/logo.png"></a></li>
-            <li class="nav-desktop"><a href="#" class="o-70 h-op">Home</a></li>
-            <li class="nav-desktop"><a href="./products.html" class="o-70 h-op">Products</a></li>
-            <li class="nav-desktop"><a href="./gallery.html" class="o-70 h-op">Gallery</a></li>
-            <li class="nav-desktop"><a href="./event.html" class="o-70 h-op">Event</a></li>
+        <li class="nav-logo mobile"><a><img src="./assets/logo.png"></a></li>
+        <ul class="font-main flex-center no-mobile">
+            <li class="nav-logo"><a><img src="./assets/logo.png"></a></li>
+            <li class="no-mobile"><a href="#" class="o-70 h-op">Home</a></li>
+            <li class="no-mobile"><a href="./products.html" class="o-70 h-op">Products</a></li>
+            <li class="no-mobile"><a href="./gallery.html" class="o-70 h-op">Gallery</a></li>
+            <li class="no-mobile"><a href="./event.html" class="o-70 h-op">Event</a></li>
         </ul>
-        <div class="mr-5">
+        <div class="mr-5 no-mobile">
             <button href="#" class="nav-signup flex-center bg-col-a font-h" onclick="showOverlay('open')">SIGN IN</button>
         </div>
     </nav>
+    <div class="nav-bottom mobile">
+
+    </div>
     
     <!-- PARALLAX -->
     <header class="parallax">
@@ -104,8 +108,8 @@
         <div class="parallax-layer" id="parallax-layer-3" data-speedx="0.25" data-speedy="0.4"></div>
         <div class="parallax-layer" id="parallax-layer-h" data-speedx="0.23" data-speedy="0.45">
             <div>
-                <h1>HI-TOYZ</h1>
-                <p>YOUR DAILY DOSE OF JOY</p>
+                <h1 class="fs-4xl">HI-TOYZ</h1>
+                <p class="fs-s">YOUR DAILY DOSE OF JOY</p>
             </div>
         </div>
         <div class="parallax-layer" id="parallax-layer-g" data-speedx="0.19" data-speedy="0.5"></div>
@@ -131,7 +135,7 @@
                 <div class="mr-10 product-h">
                     <h1 class="font-main">Our Products</h1>
                     <p class="font-p">
-                       HI-TOYZ offers a diverse range of collectible items from iconic Gundam models to detailed diecast vehicles and beloved Pokémon merchandise. Explore our products and fuel your passion for collectibles.
+                        Since 2019, HI-TOYZ has been a go-to destination for collectors, offering a diverse range of collectible items such as Gundam models, diecast vehicles, and Pokémon merchandise. Fuel your passion for collectibles by exploring our products at HI-TOYZ.
                     </p>
                     <button class="font-h2 mt-2" onclick="window.location.href='products.html'">SHOP NOW</button>
                 </div>

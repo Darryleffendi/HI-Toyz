@@ -16,7 +16,6 @@ nav {
     width: 100%;
     height: 30vh;
     margin-bottom: 5vh;
-    background-color: azure;
     background-size: cover;
 }
 
@@ -36,6 +35,41 @@ nav {
     opacity: 0%;
 }
 
+.customer-div {
+    width: 80vw;
+    height: 80vh;
+    margin-inline: auto;
+}
+
+.customer-item {
+    width: 28%;
+    height: 74vh;
+}
+
+.customer-img-container {
+    width: 85%;
+    margin-left: 12.5%;
+    height: 50vh;
+    overflow:hidden;
+}
+
+.customer-img-container:hover {
+    height: 45vh;
+}
+
+.customer-img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    margin-top: -10vh;
+}
+
+.customer-line {
+    width: 100%;
+    height: 3px;
+    background-color: aliceblue;
+}
+
 #store-1 { background-image: url(../assets/Store/store1.png); }
 #store-2 { background-image: url(../assets/Store/store2.png); }
 #store-3 { background-image: url(../assets/Store/store3.png); }
@@ -48,5 +82,18 @@ nav {
 @media screen and (max-width:768px) {
     .gallery {
         width:48%;
+    }
+
+    .customer-item {
+        width: 48%;
+        height: 55vh;
+    }
+
+    .customer-img-container {
+        height: 30vh;
+    }
+
+    .customer-img-container:hover {
+        height: 25vh;
     }
 }

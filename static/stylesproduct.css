@@ -148,3 +148,15 @@ nav {
 .product-card img:hover {
     box-shadow: rgba(0, 0, 0, 0.644) 8px 10px 20px;
 }
+
+.pseudo-product {
+    width: calc(100px + 5vw);
+    height: 1px;
+}
+
+@media screen and (max-width:576px) {
+    .product-card img {
+        width: calc(94vw - 230px);
+        height: calc(94vw - 230px);
+    }
+}
