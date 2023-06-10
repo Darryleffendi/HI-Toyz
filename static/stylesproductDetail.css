@@ -16,6 +16,10 @@ nav {
     object-position: center;
 }
 
+.product-content {
+    width: 40vw;
+}
+
 .product-content button{
     width: calc(90px + 8vw);
     height: 36px;
@@ -25,4 +29,30 @@ nav {
 
 .star-rate {
     width: 18px
+}
+
+.product-div {
+    justify-content: space-between;
+}
+
+@media screen and (max-width:768px) {
+    .product-div {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .product-img-selector {
+        margin-bottom: 5vh;
+    }
+
+    .product-img {
+        width: 100vw;
+        height: 90vw;
+        margin-left: 0;
+        margin-left: -10vw;
+    }
+
+    .product-content {
+        width: 80vw;
+    }
 }

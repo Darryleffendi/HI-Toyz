@@ -579,6 +579,18 @@ nav li img {
     z-index: 200;
 }
 
+.nav-bottom a img {
+    width: 24px
+}
+
+.nav-profile img {
+    width: 32px;
+}
+
+.nav-profile {
+    margin: 5vw;
+}
+
 /* ========== Signin Singup Overlay ========= */
 
 .overlay-div {
@@ -717,7 +729,6 @@ nav li img {
     display: none;
 }
 
-
 @media screen and (max-width:768px) {
 
     .footer-desktop {
@@ -744,16 +755,8 @@ nav li img {
         margin: 0;
     }
 
-    nav {
-        justify-content: center;
-    }
-
     nav li {
         margin-left: 0;
-    }
-
-    nav ul {
-        justify-content: center;
     }
 
     nav a {

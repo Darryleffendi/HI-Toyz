@@ -7,7 +7,7 @@ var translateY = 0;
 
 document.addEventListener("scroll", (e) => {
     let scroll = document.documentElement.scrollTop;
-    // console.log(scroll)
+    console.log(scroll)
 
     let parallax_ref = document.querySelectorAll(".parallax");
 
@@ -28,7 +28,7 @@ document.addEventListener("scroll", (e) => {
 
     if(scroll > 1100) {
         document.querySelector(".customer-div").style.marginTop = '-30vh';
-        document.querySelector(".customer-img").style.marginTop = '-10vh';
+        document.querySelector(".customer-img").style.marginTop = '-15vh';
         header.style.display = "none"
 
         if(scroll > prevScroll) {
@@ -50,6 +50,12 @@ document.addEventListener("scroll", (e) => {
     } else {
         document.querySelector(".customer-div").style.marginTop = '0';
         header.style.display = "block"
+    }
+
+    if(scroll > 2060) {
+        document.querySelector(".map-container").style.marginTop = '-5vh';
+    } else {
+        document.querySelector(".map-container").style.marginTop = '10vh';
     }
 
     prevScroll = scroll

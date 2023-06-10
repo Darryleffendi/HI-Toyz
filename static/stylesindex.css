@@ -256,6 +256,10 @@ nav {
         margin-top: 10vh;
     }
 
+    .featured-item {
+        width: calc(110px + 10vw);
+    }
+
     .product-video {    
         object-position: -5vw;
         height: 55vh;
@@ -263,7 +267,7 @@ nav {
     }
 
     .featured-slider {
-        height: 40vh;
+        height: 45vh;
     }
 
     #parallax-layer-g {

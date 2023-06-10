@@ -84,20 +84,26 @@
 
     <!-- NAVBAR -->
     <nav class="z-50">
+        <a class="nav-profile mobile" onclick="showOverlay('open')"><img src="./assets/profile.png"></a>
         <li class="nav-logo mobile"><a><img src="./assets/logo.png"></a></li>
+        <a class="nav-profile no-visible mobile"><img src="./assets/profile.png"></a>
+        
         <ul class="font-main flex-center no-mobile">
             <li class="nav-logo"><a><img src="./assets/logo.png"></a></li>
-            <li class="no-mobile"><a href="#" class="o-70 h-op">Home</a></li>
-            <li class="no-mobile"><a href="./products.html" class="o-70 h-op">Products</a></li>
-            <li class="no-mobile"><a href="./gallery.html" class="o-70 h-op">Gallery</a></li>
-            <li class="no-mobile"><a href="./event.html" class="o-70 h-op">Event</a></li>
+            <li><a href="#" class="o-70 h-op">Home</a></li>
+            <li><a href="./products.html" class="o-70 h-op">Products</a></li>
+            <li><a href="./gallery.html" class="o-70 h-op">Gallery</a></li>
+            <li><a href="./event.html" class="o-70 h-op">Event</a></li>
         </ul>
         <div class="mr-5 no-mobile">
             <button href="#" class="nav-signup flex-center bg-col-a font-h" onclick="showOverlay('open')">SIGN IN</button>
         </div>
     </nav>
-    <div class="nav-bottom mobile">
-
+    <div class="nav-bottom mobile flex-center justify-around">
+        <a href="#"><img src="./assets/home_active.png"></a>
+        <a href="./products.html"><img src="./assets/product.png"></a>
+        <a href="./gallery.html"><img src="./assets/gallery.png"></a>
+        <a href="./event.html"><img src="./assets/event.png"></a>
     </div>
     
     <!-- PARALLAX -->

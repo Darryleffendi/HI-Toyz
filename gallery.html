@@ -83,17 +83,27 @@
 
     <!-- NAVBAR -->
     <nav class="z-50">
-        <ul class="font-main flex-center">
-            <li class="mr-2"><a><img src="./assets/logo.png"></a></li>
-            <li class="no-mobile"><a href="./index.html" class="o-70 h-op">Home</a></li>
-            <li class="no-mobile"><a href="./products.html" class="o-70 h-op">Products</a></li>
-            <li class="no-mobile"><a href="#" class="o-70 h-op">Gallery</a></li>
-            <li class="no-mobile"><a href="./event.html" class="o-70 h-op">Event</a></li>
+        <a class="nav-profile mobile" onclick="showOverlay('open')"><img src="./assets/profile.png"></a>
+        <li class="nav-logo mobile"><a><img src="./assets/logo.png"></a></li>
+        <a class="nav-profile no-visible mobile"><img src="./assets/profile.png"></a>
+        
+        <ul class="font-main flex-center no-mobile">
+            <li class="nav-logo"><a><img src="./assets/logo.png"></a></li>
+            <li><a href="#" class="o-70 h-op">Home</a></li>
+            <li><a href="./products.html" class="o-70 h-op">Products</a></li>
+            <li><a href="./gallery.html" class="o-70 h-op">Gallery</a></li>
+            <li><a href="./event.html" class="o-70 h-op">Event</a></li>
         </ul>
-        <div class="mr-5">
+        <div class="mr-5 no-mobile">
             <button href="#" class="nav-signup flex-center bg-col-a font-h" onclick="showOverlay('open')">SIGN IN</button>
         </div>
     </nav>
+    <div class="nav-bottom mobile flex-center justify-around">
+        <a href="./index.html"><img src="./assets/home.png"></a>
+        <a href="./products.html"><img src="./assets/product.png"></a>
+        <a href="#"><img src="./assets/gallery_active.png"></a>
+        <a href="./event.html"><img src="./assets/event.png"></a>
+    </div>
 
     <!-- GALLERY -->
     <h1 class="font-h ml-5 fs-4xl parallax parallax-h absolute" data-speedy="1.3">GALLERY</h1>
@@ -212,7 +222,7 @@
 
     <div class="spacer-m no-mobile"></div>
 
-    <div>
+    <div class="map-container transition-2s">
         <iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=Binus%20University%20Kampus%20Alam%20Sutera%20(Universitas%20Bina%20Nusantara%20Kampus%20Alam%20Sutera)+(HI-Toyz)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
         <!-- https://www.maps.ie/create-google-map/ -->
     </div>

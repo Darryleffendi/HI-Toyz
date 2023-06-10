@@ -84,17 +84,27 @@
 
     <!-- NAVBAR -->
     <nav class="z-50">
-        <ul class="font-main flex-center">
-            <li class="mr-2"><a><img src="./assets/logo.png"></a></li>
-            <li><a href="./index.html" class="o-70 h-op">Home</a></li>
-            <li><a href="#" class="o-70 h-op">Products</a></li>
+        <a class="nav-profile mobile" onclick="showOverlay('open')"><img src="./assets/profile.png"></a>
+        <li class="nav-logo mobile"><a><img src="./assets/logo.png"></a></li>
+        <a class="nav-profile no-visible mobile"><img src="./assets/profile.png"></a>
+        
+        <ul class="font-main flex-center no-mobile">
+            <li class="nav-logo"><a><img src="./assets/logo.png"></a></li>
+            <li><a href="#" class="o-70 h-op">Home</a></li>
+            <li><a href="./products.html" class="o-70 h-op">Products</a></li>
             <li><a href="./gallery.html" class="o-70 h-op">Gallery</a></li>
             <li><a href="./event.html" class="o-70 h-op">Event</a></li>
         </ul>
-        <div class="mr-5">
+        <div class="mr-5 no-mobile">
             <button href="#" class="nav-signup flex-center bg-col-a font-h" onclick="showOverlay('open')">SIGN IN</button>
         </div>
     </nav>
+    <div class="nav-bottom mobile flex-center justify-around">
+        <a href="./index.html"><img src="./assets/home.png"></a>
+        <a href="#"><img src="./assets/product_active.png"></a>
+        <a href="./gallery.html"><img src="./assets/gallery.png"></a>
+        <a href="./event.html"><img src="./assets/event.png"></a>
+    </div>
     
     <!-- JUMBOTRON -->
     <header class="video-div fixed z--10">
