@@ -17,16 +17,16 @@
         <!-- SIGN IN -->
         <div class="transition flex-center flex-col justify-start login-div">
             <div class="w-90 overlay-close flex-center justify-end mt-2">
-                <button class="clear pointer" onclick="showOverlay('close')"><img src="./assets/close.png"></button>
+                <button class="clear pointer" onclick="showOverlay('close')"><img alt="close" src="./assets/close.png"></button>
             </div>
-            <img class="overlay-logo" src="./assets/logo.png">
+            <img alt="close" class="overlay-logo" src="./assets/logo.png">
             <p class="font-h fc-black m-0 mt-1 fs-m">Welome Back</p>
             <p class="font-p fc-gray m-0 mb-5 fs-xxs">Please enter your details to sign in</p>
 
             <div class="overlay-btn flex-center w-80 justify-between">
-                <button class="flex-center justify-center"><img src="./assets/google.png"></button>
-                <button class="flex-center justify-center"><img src="./assets/twitter.png"></button>
-                <button class="flex-center justify-center"><img src="./assets/facebook.png"></button>
+                <button class="flex-center justify-center"><img alt="Google" src="./assets/google.png"></button>
+                <button class="flex-center justify-center"><img alt="Twitter" src="./assets/twitter.png"></button>
+                <button class="flex-center justify-center"><img alt="Facebook" src="./assets/facebook.png"></button>
             </div>
             <div class="mt-2 mb-5 w-80 flex-center justify-between">
                 <div class="overlay-line"></div>
@@ -54,9 +54,9 @@
         <!-- SIGN UP -->
         <div class="transition flex-center flex-col justify-start signup-div">
             <div class="w-90 overlay-close flex-center justify-end mt-2">
-                <button class="clear pointer" onclick="showOverlay('close')"><img src="./assets/close.png"></button>
+                <button class="clear pointer" onclick="showOverlay('close')"><img alt="Close" src="./assets/close.png"></button>
             </div>
-            <img class="overlay-logo" src="./assets/logo.png">
+            <img alt="Logo" class="overlay-logo" src="./assets/logo.png">
             <p class="font-h fc-black m-0 mt-1 fs-m">Welome to HI-Toyz</p>
             <p class="font-p fc-gray m-0 mb-5 fs-xxs">Please enter your details to create your account</p>
 
@@ -83,15 +83,15 @@
 
     <!-- NAVBAR -->
     <nav class="z-50">
-        <a class="nav-profile mobile" onclick="showOverlay('open')"><img src="./assets/profile.png"></a>
-        <li class="nav-logo mobile"><a><img src="./assets/logo.png"></a></li>
-        <a class="nav-profile no-visible mobile"><img src="./assets/profile.png"></a>
+        <a class="nav-profile mobile" onclick="showOverlay('open')"><img alt="Google" src="./assets/profile.png"></a>
+        <li class="nav-logo mobile"><a><img alt="Logo" src="./assets/logo.png"></a></li>
+        <a class="nav-profile no-visible mobile"><img alt="Profile" src="./assets/profile.png"></a>
         
         <ul class="font-main flex-center no-mobile">
-            <li class="nav-logo"><a><img src="./assets/logo.png"></a></li>
-            <li><a href="#" class="o-70 h-op">Home</a></li>
+            <li class="nav-logo"><a><img alt="Logo" src="./assets/logo.png"></a></li>
+            <li><a href="./index.html" class="o-70 h-op">Home</a></li>
             <li><a href="./products.html" class="o-70 h-op">Products</a></li>
-            <li><a href="./gallery.html" class="o-70 h-op">Gallery</a></li>
+            <li><a href="#" class="o-70 h-op">Gallery</a></li>
             <li><a href="./event.html" class="o-70 h-op">Event</a></li>
         </ul>
         <div class="mr-5 no-mobile">
@@ -99,14 +99,20 @@
         </div>
     </nav>
     <div class="nav-bottom mobile flex-center justify-around">
-        <a href="./index.html"><img src="./assets/home.png"></a>
-        <a href="./products.html"><img src="./assets/product.png"></a>
-        <a href="#"><img src="./assets/gallery_active.png"></a>
-        <a href="./event.html"><img src="./assets/event.png"></a>
+        <a href="./index.html"><img alt="Home" src="./assets/home.png"></a>
+        <a href="./products.html"><img alt="Product" src="./assets/product.png"></a>
+        <a href="#"><img alt="Gallery" src="./assets/gallery_active.png"></a>
+        <a href="./event.html"><img alt="Event" src="./assets/event.png"></a>
     </div>
 
     <!-- GALLERY -->
+    <header class="parallax" data-speedy="0.55">
+        <img alt="Background" class="absolute" src="./assets/Gallery/gallerybg.jpg">
+        <div class="content-gradient absolute"></div>
+    </header>
+    
     <h1 class="font-h ml-5 fs-4xl parallax parallax-h absolute" data-speedy="1.3">GALLERY</h1>
+    
     <div class="spacer-l mt-50 no-mobile"></div>
     <div class="spacer-m mt-50 mobile"></div>
         <div class="gallery-content ml-5">
@@ -187,7 +193,7 @@
             <div class="customer-item flex-col justify-between">
                 <div>
                     <div class="customer-img-container transition-2s">
-                        <img src="./assets/Store/customer1.jpg" class="customer-img">
+                        <img alt="customer" src="./assets/Gallery/customer1.jpg" class="customer-img">
                     </div>
                     <h1 class="font-h fs-s m-0 mt-5 mb-1">Sarah</h1>
                     <p class="font-p fs-xs m-0">"A collector's paradise with an incredible selection of hobby toys and collectibles. A must-visit for enthusiasts!"</p>
@@ -198,7 +204,7 @@
             <div class="customer-item flex-col justify-between">
                 <div>
                     <div class="customer-img-container transition-2s">
-                        <img src="./assets/Store/customer2.jpg" class="customer-img">
+                        <img alt="customer" src="./assets/Gallery/customer2.jpg" class="customer-img">
                     </div>
                     <h1 class="font-h fs-s m-0 mt-5 mb-1">John</h1>
                     <p class="font-p fs-xs m-0">"Knowledgeable and friendly staff at HI-Toyz offer top-notch customer service. Perfect for finding unique items for your collection."</p>
@@ -209,7 +215,7 @@
             <div class="customer-item flex-col justify-between no-mobile">
                 <div>
                     <div class="customer-img-container transition-2s">
-                        <img src="./assets/Store/customer3.jpg" class="customer-img">
+                        <img alt="customer" src="./assets/Gallery/customer3.jpg" class="customer-img">
                     </div>
                     <h1 class="font-h fs-s m-0 mt-5 mb-1">Sam</h1>
                     <p class="font-p fs-xs m-0">"HI-Toyz offers high-quality collectibles, from action figures to model kits and trading cards. A dream store for collectors!"</p>
@@ -231,7 +237,7 @@
     <div class="footer-div bg-col-main">
         <div class="footer-left flex-col justify-between">
             <div>
-                <img src="./assets/logo.png">
+                <img alt="logo" src="./assets/logo.png">
                 <p class="font-p fs-xxs mt-0 w-80">YOUR DAILY DOSE OF JOY</p>
             </div>
             <p class="font-p fs-xxs mb-5">© LC089 - Darryl Christopher</p>

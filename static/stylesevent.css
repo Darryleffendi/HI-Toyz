@@ -1,0 +1,136 @@
+.content header {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    background-color: transparent;
+}
+
+.content-gradient {
+    width:100%;
+    height: 90vh;
+    background: #000000;
+    background: linear-gradient(180deg, #00000000 0%, rgba(24,24,21,1) 100%);
+}
+
+.content header img {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    object-position: top;
+    opacity: 25%;
+    filter: saturate(0.5);
+    -webkit-filter: saturate(0.5);
+}
+
+.discount-input {
+    margin-top: 5vh;
+    width: calc(130px + 32%);
+    height: 5vh;
+}
+
+.discount-input input {
+    width: 100%;
+    height: 5vh;
+    border-radius: 2.5vh;
+    background-color: #a6a6a637;
+    border: none;
+    color: #f4f4f4;
+    text-indent: 2.5vh;
+}
+
+.discount-input input:focus {
+    outline: none;
+}
+
+.discount-input button {
+    position: absolute;
+    width: calc(25px + 4.7%);
+    height: 4.25vh;
+    margin-left: calc(105px + 8%);
+    margin-top: 0.375vh;
+    background-color: #E45826;
+    border-radius: 2.5vh;
+    border: none;
+}
+
+.invalid-discount {
+    display: none;
+}
+
+.discount-cards {
+    margin-top: 15vh;
+    width: 80vw;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.discount-card {
+    width: 30%;
+    height: 100%;
+    background-color: #a6a6a637;
+    border-radius: 2.5vh;
+    overflow: hidden;
+}
+
+.discount-card img {
+    height: 110%;
+    margin-top:5vh;
+    margin-left: 5vw;
+    filter: saturate(0.4);
+    opacity: 40%;
+}
+
+.card-text {
+    width: 24vw;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2vw;
+}
+
+.card-text h1 {
+    margin-top: -25px
+}
+
+.slider-discount {
+    width: 80vw;
+    margin-left: 10vw;
+    margin-top: 25vh;
+}
+
+.slider-discount img {
+    width: 80vw;
+    object-fit: cover;
+    border-radius: 2.5vh;
+}
+
+@media screen and (max-width:768px) {
+    .discount-input {
+        width: calc(180px + 32%);
+    }
+
+    .discount-input button {
+        width: calc(50px + 4.7%);
+        margin-left: calc(130px + 8%);
+    }
+
+    .discount-cards {
+        height: 30vh;
+    }
+
+    .discount-card {
+        width: 45%;
+    }
+
+    .card-text {
+        width: 36vw;
+        height: 30vh;
+    }
+}

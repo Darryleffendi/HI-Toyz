@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="./scripts/script.js"></script>
-    <script type="text/javascript" src="./scripts/scriptproducts.js"></script>
+    <script type="text/javascript" src="./scripts/scriptevent.js"></script>
     <link rel="icon" href="assets/logo2.png">
     <link rel="stylesheet" href="static/styles.css">
     <link rel="stylesheet" href="static/stylesevent.css">
@@ -17,7 +17,7 @@
         <!-- SIGN IN -->
         <div class="transition flex-center flex-col justify-start login-div">
             <div class="w-90 overlay-close flex-center justify-end mt-2">
-                <button class="clear pointer" onclick="showOverlay('close')"><img src="./assets/close.png"></button>
+                <button class="clear pointer" onclick="showOverlay('close')"><img alt="close" src="./assets/close.png"></button>
             </div>
             <img class="overlay-logo" src="./assets/logo.png">
             <p class="font-h fc-black m-0 mt-1 fs-m">Welome Back</p>
@@ -89,10 +89,10 @@
         
         <ul class="font-main flex-center no-mobile">
             <li class="nav-logo"><a><img src="./assets/logo.png"></a></li>
-            <li><a href="#" class="o-70 h-op">Home</a></li>
+            <li><a href="./index.html" class="o-70 h-op">Home</a></li>
             <li><a href="./products.html" class="o-70 h-op">Products</a></li>
             <li><a href="./gallery.html" class="o-70 h-op">Gallery</a></li>
-            <li><a href="./event.html" class="o-70 h-op">Event</a></li>
+            <li><a href="#" class="o-70 h-op">Event</a></li>
         </ul>
         <div class="mr-5 no-mobile">
             <button href="#" class="nav-signup flex-center bg-col-a font-h" onclick="showOverlay('open')">SIGN IN</button>
@@ -103,6 +103,88 @@
         <a href="./products.html"><img src="./assets/product.png"></a>
         <a href="./gallery.html"><img src="./assets/gallery.png"></a>
         <a href="#"><img src="./assets/event_active.png"></a>
+    </div>
+
+    <!-- Contents -->
+    <div class="content">
+        <header>
+            <img class="absolute z--10" src="./assets/Event/eventbg.jpg">
+            <div class="content-gradient absolute z--10"></div>
+            <div class="flex-col justify-center w-40 ml-10">
+                <h1 class="font-h fs-xxl m-0">EVENTS</h1>
+                <p class="font-p fs-xs m-0">Redeem a discount or referall code</p>
+                <div class="discount-input">
+                    <button class="font-h fs-xs pointer" onclick="redeemCode()">REDEEM</button>
+                    <input type="text" placeholder="Type your code here">
+                </div>
+                <p class="font-p fc-red fs-xs invalid-discount">Invalid Code</p>
+            </div>
+        </header>
+
+        <div class="discount-cards ml-10 transition-2s">
+            <div class="discount-card">
+                <div class="absolute card-text">
+                    <p class="font-p fs-s m-0">RX-78-2 GUNDAM</p>
+                    <h1 class="font-h fs-xxxl m-0">50%</h1>
+                </div>
+                <img alt="gundam" src="./assets/Event/gundam.png">
+            </div>
+            <div class="discount-card">
+                <div class="absolute card-text">
+                    <p class="font-p fs-s m-0">Tamiya G500</p>
+                    <h1 class="font-h fs-xxxl m-0">25%</h1>
+                </div>
+                <img alt="mercedes" src="./assets/Event/tamiya.png">
+            </div>
+            <div class="discount-card no-mobile"></div>
+        </div>
+
+        <div class="slider-discount">
+            <img alt="discount" src="./assets/Gallery/discount2.jpg">
+        </div>
+        
+        <div class="spacer-m"></div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer-div bg-col-main">
+        <div class="footer-left flex-col justify-between">
+            <div>
+                <img alt="logo" src="./assets/logo.png">
+                <p class="font-p fs-xxs mt-0 w-80">YOUR DAILY DOSE OF JOY</p>
+            </div>
+            <p class="font-p fs-xxs mb-5">© LC089 - Darryl Christopher</p>
+        </div>
+        <div class="footer-right flex justify-between w-40">
+            <div class="flex-col gap-10 footer-desktop">
+                <p class="font-h">EXPLORE</p>
+                <a class="font-p fs-xxs no-deco" href="">Home</a>
+                <a class="font-p fs-xxs no-deco" href="">Products</a>
+                <a class="font-p fs-xxs no-deco" href="">Gallery</a>
+                <a class="font-p fs-xxs no-deco" href="">Event</a>
+                <a class="font-p fs-xxs no-deco" href=""></a>
+            </div>
+            <div class="flex-col gap-10 footer-desktop">
+                <p class="font-h">SERVICES</p>
+                <a class="font-p fs-xxs no-deco" href="">Terms of Service</a>
+                <a class="font-p fs-xxs no-deco" href="">Cookies Policy</a>
+                <a class="font-p fs-xxs no-deco" href="">F.A.Q</a>
+                <a class="font-p fs-xxs no-deco" href="">Support</a>
+                <a class="font-p fs-xxs no-deco" href=""></a>
+            </div>  
+            <div class="flex-col gap-10">
+                <p class="font-h">SOCIALS</p>
+                <a class="font-p fs-xxs no-deco" href="https://www.instagram.com/darryl_ce/">Instagram</a>
+                <a class="font-p fs-xxs no-deco" href="https://www.linkedin.com/in/darryl-christopher-effendi-987171250/">LinkedIn</a>
+                <a class="font-p fs-xxs no-deco" href="https://github.com/Darryleffendi">Github</a>
+                <a class="font-p fs-xxs no-deco" href=""></a>
+            </div>
+            <div class="flex-col gap-10 footer-desktop">
+                <p class="font-h">NEWSLETTER</p>
+                <input type="text" class="footer-input" placeholder="Your email here">
+                <button class="bg-col-a footer-btn font-h fs-xxs">SUBSCRIBE</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>

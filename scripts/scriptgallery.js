@@ -7,7 +7,7 @@ var translateY = 0;
 
 document.addEventListener("scroll", (e) => {
     let scroll = document.documentElement.scrollTop;
-    console.log(scroll)
+    // console.log(scroll)
 
     let parallax_ref = document.querySelectorAll(".parallax");
 
@@ -24,6 +24,15 @@ document.addEventListener("scroll", (e) => {
     }
     else {
         if(headeropacity < 1) header.style.opacity = (headeropacity + 0.01);
+    }
+
+    if(scroll > 60) {
+        document.querySelector("nav").style.backgroundColor = "#181815ea";
+        document.querySelector("nav").style.backdropFilter = "blur(5px)";
+    }
+    else if(scroll <= 60) {
+        document.querySelector("nav").style.backgroundColor = "#191a1600";
+        document.querySelector("nav").style.backdropFilter = "none";
     }
 
     if(scroll > 1100) {
