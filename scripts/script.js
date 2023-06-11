@@ -182,7 +182,7 @@ function isAlphanumeric(a) {
     return false
 }
 
-/* ============== Signin/Signup Overlay =============== */
+/* ============== Signin Overlay =============== */
 
 var overlayShown = 0;
 
@@ -195,94 +195,25 @@ function showOverlay(args) {
             document.querySelector(".overlay-div").style.opacity = "1";
             document.querySelector(".login-div").style.opacity = "1";
             document.querySelector(".login-div").style.marginTop = "0vh";
-            document.querySelector(".signup-div").style.marginTop = "0vh";
             document.getElementById("success_login").style.display = "none"
-            document.getElementById("success_signup").style.display = "none"
             document.getElementById("error_login").style.display = "block"
-            document.getElementById("error_signup").style.display = "block"
             overlayShown = 1;
         })
     }
     else if(args == 'close') {
         document.querySelector(".login-div").style.marginTop = "120vh";
-        document.querySelector(".signup-div").style.marginTop = "120vh";
         document.querySelector(".overlay-div").style.opacity = "0";
         overlayShown = 0;
         sleep(400).then(() => {
             document.querySelector(".overlay-div").style.display = "none";
-            document.querySelector(".signup-div").style.display = "none";
         });
     }
 }
 
 function changeOverlay(args) {
-    
-    if(args == 'login') {
-        document.querySelector(".signup-div").style.opacity = "0";
-        
-        overlayShown = 1;
-        sleep(400).then(() => {
-            document.querySelector(".signup-div").style.display = "none";
-            document.querySelector(".login-div").style.display = "flex";
-            sleep(10).then(() => {
-                document.querySelector(".login-div").style.opacity = "1";
-            })
-        })
-    }
-    else if(args == 'signup') {
-        document.querySelector(".login-div").style.opacity = "0";
-        
-        overlayShown = 2;
-        sleep(400).then(() => {
-            document.querySelector(".login-div").style.display = "none";
-            document.querySelector(".signup-div").style.display = "flex";
-            sleep(10).then(() => {
-                document.querySelector(".signup-div").style.opacity = "1";
-            })
-        });
-    }
-}
+    localStorage.setItem("previousPage", args);
 
-function signUp() {
-    let username = document.getElementById("username_regis").value;
-    let password = document.getElementById("password_regis").value;
-    let confirm = document.getElementById("password_confirm").value;
-    let email = document.getElementById("email_regis").value;
-    let error = document.getElementById("error_signup");
-
-    if(username.length == 0 || password.length == 0 || confirm.length == 0 || email.length == 0) {
-        error.innerHTML = "Please fill in all the fields";
-        return;
-    }
-    if(!(email.includes('.')) && !(email.includes('@'))) {
-        error.innerHTML = "Email must be valid";
-        return;
-    }
-    if(!(isAlphanumeric(password))) {
-        error.innerHTML = "Password must contain upper lower case and numbers";
-        return;
-    }
-    if(password.length < 6) {
-        error.innerHTML = "Password must be at least 6 characters";
-        return;
-    }
-    if(findUsername(username) !== null) {
-        error.innerHTML = "Username already exists";
-        return;
-    }
-    if(password !== confirm) {
-        error.innerHTML = "Passwords do not match";
-        return;
-    }
-
-    error.style.display = "none";
-    document.getElementById("success_signup").style.display = "block"
-
-    addAccount(username, password, email);
-
-    sleep(300).then(() => {
-        showOverlay('close');
-    })
+    window.location.href="register.html";
 }
 
 function login() {

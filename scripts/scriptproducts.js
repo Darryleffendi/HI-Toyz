@@ -29,10 +29,16 @@ document.addEventListener("DOMContentLoaded", async function(){
     document.querySelector("#content-search").addEventListener("input", function() {
         let search = document.querySelector("#content-search").value;
         let content = document.querySelector(".product-content"); 
+        let flexItem = document.querySelector(".product-card");   
     
         if(search === "") getProducts();
+
+        let columns = Math.floor(content.offsetWidth / flexItem.offsetWidth);
         
-        content.innerHTML = mapToHTML(getProductBySubstr(search), "");
+        let contentHtml =  mapToHTML(getProductBySubstr(search), "");
+        contentHtml =  pseudoProduct(columns, contentHtml);
+
+        content.innerHTML = contentHtml
     
     });
 });

@@ -258,6 +258,10 @@ body::-webkit-scrollbar-thumb {
     margin-left: 40px;
 }
 
+.ml-1 {
+    margin-left: 1.25vw;
+}
+
 .ml-2 {
     margin-left: 2.5vw;
 }
@@ -350,7 +354,7 @@ body::-webkit-scrollbar-thumb {
 .h-op:hover {
     opacity: 100%;
     font-size: 17px;
-    text-shadow: rgba(198, 207, 215, 0.402) 0px 8px 24px;
+    text-shadow: rgba(198, 207, 215, 0.402) 0px 0px 32px;
 }
 
 .transition {

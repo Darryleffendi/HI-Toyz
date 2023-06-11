@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./scripts/script.js"></script>
+    <script type="text/javascript" src="./scripts/scriptregister.js"></script>
+    <link rel="icon" href="assets/logo2.png">
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet" href="static/stylesregister.css">
+    <title>HI-Toyz: Register</title>
+</head>
+<body onload="start()" class="bg-col-main">
+
+    <!-- NAVBAR -->
+    <nav class="z-50">
+        <a class="nav-profile mobile" onclick="showOverlay('open')"><img alt="Google" src="./assets/profile.png"></a>
+        <li class="nav-logo mobile"><a><img alt="Logo" src="./assets/logo.png"></a></li>
+        <a class="nav-profile no-visible mobile"><img alt="Profile" src="./assets/profile.png"></a>
+        
+        <ul class="font-main flex-center no-mobile">
+            <li class="nav-logo"><a><img alt="Logo" src="./assets/logo.png"></a></li>
+            <li><a href="./index.html" class="o-70 h-op">Home</a></li>
+            <li><a href="./products.html" class="o-70 h-op">Products</a></li>
+            <li><a href="./gallery.html" class="o-70 h-op">Gallery</a></li>
+            <li><a href="./event.html" class="o-70 h-op">Event</a></li>
+        </ul>
+    </nav>
+    <div class="nav-bottom mobile flex-center justify-around">
+        <a href="./index.html"><img alt="Home" src="./assets/home.png"></a>
+        <a href="./products.html"><img alt="Product" src="./assets/product.png"></a>
+        <a href="./gallery.html"><img alt="Gallery" src="./assets/gallery.png"></a>
+        <a href="./event.html"><img alt="Event" src="./assets/event.png"></a>
+    </div>
+
+    <!-- Contents -->
+    <header>
+        <img class="absolute z--10" src="./assets/minigt.png">
+        <div class="bg-col-main w-40 h-100"></div>
+        <div class="header-gradient"></div>
+    </header>
+
+    <div class="w-screen h-screen">
+        <div class="content">
+            <div class="spacer-nav"></div>
+            <p class="font-h m-0 mt-1 fs-m w-80">Welome to HI-Toyz</p>
+            <p class="font-p m-0 mb-5 fs-xxs w-80">Please enter your details to create your account</p>
+
+            <label class="font-p fs-xxs text-left w-80" for="username_regis">Username</label>
+            <input type="text" class="overlay-input font-p fc-white" id="username_regis" placeholder="Type your username" onkeyup="userInput()">
+            <p class="m-0 fs-xs font-p fc-red w-80" id="error_username">&nbsp;</p>
+
+            <label class="font-p fs-xxs text-left w-80 mt-2" for="email_regis">Email</label>
+            <input type="email" class="overlay-input font-p fc-white" id="email_regis" placeholder="Type your email" onkeyup="emailInput()">
+            <p class="m-0 fs-xs font-p fc-red w-80" id="error_email">&nbsp;</p>
+            
+            <label class="font-p fs-xxs text-left w-80 mt-2" for="password_regis">Password</label>
+            <input type="password" class="overlay-input font-p fc-white" id="password_regis" placeholder="Type your password" onkeyup="passwordInput()">
+            <p class="m-0 fs-xs font-p fc-red w-80" id="error_password">&nbsp;</p>
+            
+            <label class="font-p fs-xxs text-left w-80 mt-2" for="password_confirm">Confirm Password</label>
+            <input type="password" class="overlay-input font-p fc-white" id="password_confirm" placeholder="Confirm your password" onkeyup="confirmInput()">
+            <p class="m-0 fs-xs font-p fc-red w-80" id="error_confirm">&nbsp;</p>
+            
+            <div class="flex-center w-80 mt-2">
+                <input type="checkbox" id="agree">
+                <label class="font-p fs-xxs text-left w-80 ml-1" for="agree">I Agree to the terms and conditions</label>
+            </div>
+            
+            <button class="sign-btn font-h bg-col-a pointer mt-5" onclick="signUp()">CREATE ACCOUNT</button>
+            
+            <p class="font-p fs-xs fc-red mt-2 mb-5" id="error_signup">&nbsp;</p>
+            <p class="font-p fs-xxs fc-green mt-2 mb-5" id="success_signup">Success!</p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer-div bg-col-main">
+        <div class="footer-left flex-col justify-between">
+            <div>
+                <img alt="logo" src="./assets/logo.png">
+                <p class="font-p fs-xxs mt-0 w-80">YOUR DAILY DOSE OF JOY</p>
+            </div>
+            <p class="font-p fs-xxs mb-5">© 2023 - Darryl Christopher</p>
+        </div>
+        <div class="footer-right flex justify-between w-40">
+            <div class="flex-col gap-10 footer-desktop">
+                <p class="font-h">EXPLORE</p>
+                <a class="font-p fs-xxs no-deco" href="">Home</a>
+                <a class="font-p fs-xxs no-deco" href="">Products</a>
+                <a class="font-p fs-xxs no-deco" href="">Gallery</a>
+                <a class="font-p fs-xxs no-deco" href="">Event</a>
+                <a class="font-p fs-xxs no-deco" href=""></a>
+            </div>
+            <div class="flex-col gap-10 footer-desktop">
+                <p class="font-h">SERVICES</p>
+                <a class="font-p fs-xxs no-deco" href="">Terms of Service</a>
+                <a class="font-p fs-xxs no-deco" href="">Cookies Policy</a>
+                <a class="font-p fs-xxs no-deco" href="">F.A.Q</a>
+                <a class="font-p fs-xxs no-deco" href="">Support</a>
+                <a class="font-p fs-xxs no-deco" href=""></a>
+            </div>  
+            <div class="flex-col gap-10">
+                <p class="font-h">SOCIALS</p>
+                <a class="font-p fs-xxs no-deco" href="https://www.instagram.com/darryl_ce/">Instagram</a>
+                <a class="font-p fs-xxs no-deco" href="https://www.linkedin.com/in/darryl-christopher-effendi-987171250/">LinkedIn</a>
+                <a class="font-p fs-xxs no-deco" href="https://github.com/Darryleffendi">Github</a>
+                <a class="font-p fs-xxs no-deco" href=""></a>
+            </div>
+            <div class="flex-col gap-10 footer-desktop">
+                <p class="font-h">NEWSLETTER</p>
+                <input type="text" class="footer-input" placeholder="Your email here">
+                <button class="bg-col-a footer-btn font-h fs-xxs">SUBSCRIBE</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

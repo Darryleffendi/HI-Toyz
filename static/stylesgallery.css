@@ -101,6 +101,8 @@ nav {
     margin-top:10vh;
 }
 
+#event-1 { background-image: url(../assets/Gallery/event1.png); }
+#event-2 { background-image: url(../assets/Gallery/event2.png); }
 #store-1 { background-image: url(../assets/Gallery/store1.png); }
 #store-2 { background-image: url(../assets/Gallery/store2.png); }
 #store-3 { background-image: url(../assets/Gallery/store3.png); }

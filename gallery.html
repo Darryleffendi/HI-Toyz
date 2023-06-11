@@ -9,7 +9,7 @@
     <link rel="icon" href="assets/logo2.png">
     <link rel="stylesheet" href="static/styles.css">
     <link rel="stylesheet" href="static/stylesgallery.css">
-    <title>HI-Toyz: Events</title>
+    <title>HI-Toyz: Gallery</title>
 </head>
 <body onload="start()" class="bg-col-main">
     <!-- SIGNIN/SIGNUP OVERLAY -->
@@ -47,36 +47,7 @@
 
             <div>
                 <p class="font-p fc-gray fs-xxs inline">Don't have an account? </p>
-                <a class="font-h fc-black fs-xxs underline pointer" href="javascript:changeOverlay('signup')">Create an account</a>
-            </div>
-        </div>
-
-        <!-- SIGN UP -->
-        <div class="transition flex-center flex-col justify-start signup-div">
-            <div class="w-90 overlay-close flex-center justify-end mt-2">
-                <button class="clear pointer" onclick="showOverlay('close')"><img alt="Close" src="./assets/close.png"></button>
-            </div>
-            <img alt="Logo" class="overlay-logo" src="./assets/logo.png">
-            <p class="font-h fc-black m-0 mt-1 fs-m">Welome to HI-Toyz</p>
-            <p class="font-p fc-gray m-0 mb-5 fs-xxs">Please enter your details to create your account</p>
-
-            <label class="font-p fc-gray fs-xxs text-left w-80" for="username_regis">Username</label>
-            <input type="text" class="overlay-input" id="username_regis" placeholder="Type your username">
-            <label class="font-p fc-gray fs-xxs text-left w-80 mt-2" for="email_regis">Email</label>
-            <input type="email" class="overlay-input" id="email_regis" placeholder="Type your email">
-            <label class="font-p fc-gray fs-xxs text-left w-80 mt-2" for="password_regis">Password</label>
-            <input type="password" class="overlay-input" id="password_regis" placeholder="Type your password">
-            <label class="font-p fc-gray fs-xxs text-left w-80 mt-2" for="password_confirm">Confirm Password</label>
-            <input type="password" class="overlay-input" id="password_confirm" placeholder="Confirm your password">
-            
-            <button class="sign-btn font-h bg-col-a pointer mt-5" onclick="signUp()">CREATE ACCOUNT</button>
-            
-            <p class="font-p fs-xs fc-red mt-2 mb-5" id="error_signup">&nbsp;</p>
-            <p class="font-p fs-xxs fc-green mt-2 mb-5" id="success_signup">Success!</p>
-            
-            <div>
-                <p class="font-p fc-gray fs-xxs inline">Already have an account? </p>
-                <a class="font-h fc-black fs-xxs underline pointer" href="javascript:changeOverlay('login')">Sign in here</a>
+                <a class="font-h fc-black fs-xxs underline pointer" href="javascript:changeOverlay('gallery.html')">Create an account</a>
             </div>
         </div>
     </div>
@@ -117,16 +88,16 @@
     <div class="spacer-m mt-50 mobile"></div>
         <div class="gallery-content ml-5">
             <div class="left-gallery gallery parallax no-mobile" data-speedy="0.4">
-                <div class="gallery-item" id="store-1">
+                <div class="gallery-item" id="event-1">
                     <div class="gallery-item-bg transition flex-col justify-center">
-                        <p class="font-h m-0">HI-Toyz Alam Sutera</p>
-                        <p class="font-p m-0">1, Jl. Hang Lekir I No.6</p>
+                        <p class="font-h m-0">Tamiya Racing Event</p>
+                        <p class="font-p m-0">@HI-Toyz Kemanggisan</p>
                     </div>
                 </div>
-                <div class="gallery-item" id="store-2">
+                <div class="gallery-item" id="event-2">
                     <div class="gallery-item-bg transition flex-col justify-center">
-                        <p class="font-h m-0">HI-Toyz Alam Sutera</p>
-                        <p class="font-p m-0">1, Jl. Hang Lekir I No.6</p> 
+                        <p class="font-h m-0">Mini-GT Car Meet Event</p>
+                        <p class="font-p m-0">@HI-Toyz Alam Sutera</p> 
                     </div>
                 </div>
             </div>
@@ -240,7 +211,7 @@
                 <img alt="logo" src="./assets/logo.png">
                 <p class="font-p fs-xxs mt-0 w-80">YOUR DAILY DOSE OF JOY</p>
             </div>
-            <p class="font-p fs-xxs mb-5">© LC089 - Darryl Christopher</p>
+            <p class="font-p fs-xxs mb-5">© 2023 - Darryl Christopher</p>
         </div>
         <div class="footer-right flex justify-between w-40">
             <div class="flex-col gap-10 footer-desktop">

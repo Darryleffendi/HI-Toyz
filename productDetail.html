@@ -18,16 +18,16 @@
         <!-- SIGN IN -->
         <div class="transition flex-center flex-col justify-start login-div">
             <div class="w-90 overlay-close flex-center justify-end mt-2">
-                <button class="clear pointer" onclick="showOverlay('close')"><img src="./assets/close.png"></button>
+                <button class="clear pointer" onclick="showOverlay('close')"><img alt="close" src="./assets/close.png"></button>
             </div>
-            <img class="overlay-logo" src="./assets/logo.png">
+            <img alt="close" class="overlay-logo" src="./assets/logo.png">
             <p class="font-h fc-black m-0 mt-1 fs-m">Welome Back</p>
             <p class="font-p fc-gray m-0 mb-5 fs-xxs">Please enter your details to sign in</p>
 
             <div class="overlay-btn flex-center w-80 justify-between">
-                <button class="flex-center justify-center"><img src="./assets/google.png"></button>
-                <button class="flex-center justify-center"><img src="./assets/twitter.png"></button>
-                <button class="flex-center justify-center"><img src="./assets/facebook.png"></button>
+                <button class="flex-center justify-center"><img alt="Google" src="./assets/google.png"></button>
+                <button class="flex-center justify-center"><img alt="Twitter" src="./assets/twitter.png"></button>
+                <button class="flex-center justify-center"><img alt="Facebook" src="./assets/facebook.png"></button>
             </div>
             <div class="mt-2 mb-5 w-80 flex-center justify-between">
                 <div class="overlay-line"></div>
@@ -48,50 +48,21 @@
 
             <div>
                 <p class="font-p fc-gray fs-xxs inline">Don't have an account? </p>
-                <a class="font-h fc-black fs-xxs underline pointer" href="javascript:changeOverlay('signup')">Create an account</a>
+                <a class="font-h fc-black fs-xxs underline pointer" href="javascript:changeOverlay('productDetail.html')">Create an account</a>
             </div>
         </div>
-
-        <!-- SIGN UP -->
-        <div class="transition flex-center flex-col justify-start signup-div">
-            <div class="w-90 overlay-close flex-center justify-end mt-2">
-                <button class="clear pointer" onclick="showOverlay('close')"><img src="./assets/close.png"></button>
-            </div>
-            <img class="overlay-logo" src="./assets/logo.png">
-            <p class="font-h fc-black m-0 mt-1 fs-m">Welome to HI-Toyz</p>
-            <p class="font-p fc-gray m-0 mb-5 fs-xxs">Please enter your details to create your account</p>
-
-            <label class="font-p fc-gray fs-xxs text-left w-80" for="username_regis">Username</label>
-            <input type="text" class="overlay-input" id="username_regis" placeholder="Type your username">
-            <label class="font-p fc-gray fs-xxs text-left w-80 mt-2" for="email_regis">Email</label>
-            <input type="email" class="overlay-input" id="email_regis" placeholder="Type your email">
-            <label class="font-p fc-gray fs-xxs text-left w-80 mt-2" for="password_regis">Password</label>
-            <input type="password" class="overlay-input" id="password_regis" placeholder="Type your password">
-            <label class="font-p fc-gray fs-xxs text-left w-80 mt-2" for="password_confirm">Confirm Password</label>
-            <input type="password" class="overlay-input" id="password_confirm" placeholder="Confirm your password">
-            
-            <button class="sign-btn font-h bg-col-a pointer mt-5" onclick="signUp()">CREATE ACCOUNT</button>
-            
-            <p class="font-p fs-xs fc-red mt-2 mb-5" id="error_signup">&nbsp;</p>
-            <p class="font-p fs-xxs fc-green mt-2 mb-5" id="success_signup">Success!</p>
-            
-            <div>
-                <p class="font-p fc-gray fs-xxs inline">Already have an account? </p>
-                <a class="font-h fc-black fs-xxs underline pointer" href="javascript:changeOverlay('login')">Sign in here</a>
-            </div>
-        </div>
-    </div> 
+    </div>
 
     <!-- NAVBAR -->
     <nav class="z-50">
-        <a class="nav-profile mobile" onclick="showOverlay('open')"><img src="./assets/profile.png"></a>
-        <li class="nav-logo mobile"><a><img src="./assets/logo.png"></a></li>
-        <a class="nav-profile no-visible mobile"><img src="./assets/profile.png"></a>
+        <a class="nav-profile mobile" onclick="showOverlay('open')"><img alt="Google" src="./assets/profile.png"></a>
+        <li class="nav-logo mobile"><a><img alt="Logo" src="./assets/logo.png"></a></li>
+        <a class="nav-profile no-visible mobile"><img alt="Profile" src="./assets/profile.png"></a>
         
         <ul class="font-main flex-center no-mobile">
-            <li class="nav-logo"><a><img src="./assets/logo.png"></a></li>
+            <li class="nav-logo"><a><img alt="Logo" src="./assets/logo.png"></a></li>
             <li><a href="./index.html" class="o-70 h-op">Home</a></li>
-            <li><a href="#" class="o-70 h-op">Products</a></li>
+            <li><a href="./products.html" class="o-70 h-op">Products</a></li>
             <li><a href="./gallery.html" class="o-70 h-op">Gallery</a></li>
             <li><a href="./event.html" class="o-70 h-op">Event</a></li>
         </ul>
@@ -100,10 +71,10 @@
         </div>
     </nav>
     <div class="nav-bottom mobile flex-center justify-around">
-        <a href="./index.html"><img src="./assets/home.png"></a>
-        <a href="./products.html"><img src="./assets/product_active.png"></a>
-        <a href="./gallery.html"><img src="./assets/gallery.png"></a>
-        <a href="./event.html"><img src="./assets/event.png"></a>
+        <a href="./index.html"><img alt="Home" src="./assets/home.png"></a>
+        <a href="./products.html"><img alt="Product" src="./assets/product_active.png"></a>
+        <a href="./gallery.html"><img alt="Gallery" src="./assets/gallery.png"></a>
+        <a href="./event.html"><img alt="Event" src="./assets/event.png"></a>
     </div>
 
     <!-- Content -->
@@ -149,7 +120,7 @@
                 <img src="./assets/logo.png">
                 <p class="font-p fs-xxs mt-0 w-80">YOUR DAILY DOSE OF JOY</p>
             </div>
-            <p class="font-p fs-xxs mb-5">© LC089 - Darryl Christopher</p>
+            <p class="font-p fs-xxs mb-5">© 2023 - Darryl Christopher</p>
         </div>
         <div class="footer-right flex justify-between w-40">
             <div class="flex-col gap-10 footer-desktop">
