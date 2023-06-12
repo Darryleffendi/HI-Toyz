@@ -73,7 +73,7 @@ function emailInput() {
         return;
     }
 
-    if(!(email.includes('.')) || !(email.includes('@'))) {
+    if(!isEmail(email)) {
         errorEmail.innerHTML = "Email must be valid";
         emailErr = true;
         return;

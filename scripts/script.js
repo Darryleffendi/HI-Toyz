@@ -182,6 +182,31 @@ function isAlphanumeric(a) {
     return false
 }
 
+function isEmail(str) {
+    let length = str.length;
+    let aCount = 0;
+    let dotCount = 0;
+    let spaceCount = 0;
+
+    for(let i = 0; i < length; i ++) {
+        if(str.charAt(i) == '@') {
+            aCount += 1;
+        }
+        else if(str.charAt(i) == '.') {
+            dotCount += 1;
+        }
+        else if(str.charAt(i) == ' ') {
+            spaceCount += 1;
+        }
+    }
+
+    if(aCount != 1) return false;
+    if(dotCount < 1) return false;
+    if(spaceCount > 0) return false;
+
+    return true;
+}
+
 /* ============== Signin Overlay =============== */
 
 var overlayShown = 0;
