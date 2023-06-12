@@ -97,12 +97,12 @@ function getRating(rating, className) {
 
     for(; i < Math.round(rating); i ++) {
         rateDiv.innerHTML = rateDiv.innerHTML +
-        "<img src=\"./assets/rate_active.png\" class=\"star-rate\">"
+        "<img alt=\"star-active\" src=\"./assets/rate_active.png\" class=\"star-rate\">"
     }
 
     for(; i < 5; i ++) {
         rateDiv.innerHTML = rateDiv.innerHTML +
-        "<img src=\"./assets/rate.png\" class=\"star-rate\">"
+        "<img alt=\"star-empty\" src=\"./assets/rate.png\" class=\"star-rate\">"
     }
 }
 

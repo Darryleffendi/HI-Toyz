@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", async function(){
         let content = document.querySelector(".product-content"); 
         let flexItem = document.querySelector(".product-card");   
     
-        if(search === "") getProducts();
+        if(search === "") return getProducts();
 
         let columns = Math.floor(content.offsetWidth / flexItem.offsetWidth);
         
@@ -123,7 +123,7 @@ function mapToHTML(arr, stringHtml) {
     arr.forEach((product) => {
         stringHtml = stringHtml +
         "<div class=\"product-card mb-5\" onclick=\"gotoDetails(" + product.id + ")\">" +
-            "<img src=\"" + product.image +"\">" +
+            "<img alt=\""+ product.name +"\" src=\"" + product.image +"\">" +
             "<p class=\"font-h fs-xs mb-0\">" + product.name + "</p>" +
             "<p class=\"font-p fs-xs\">" + rupiah(product.price) + "</p>" +
         "</div>"

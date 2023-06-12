@@ -178,7 +178,7 @@ async function getFeatured(args) {
         featured_ref.innerHTML = featured_ref.innerHTML +
         "<div class=\"featured-item-" + i + " featured-item transition-2 wrap\" onclick=\"gotoDetails(" + id + ")\">" +
             "<div>" +
-                "<img src=\""+ product.image +"\">" +
+                "<img alt=\""+ product.name +"\" src=\""+ product.image +"\">" +
                 "<h1 class=\"font-h fs-s mb-0\">" + product.name + "</h1>" +
                 "<p class=\"font-p fs-xs m-0\">" + product.brand + "</p>" +
             "</div>" +
